@@ -92,6 +92,22 @@
             letter-spacing: 0.02em;
         }
 
+        .header-contact {
+            font-size: 0.8rem;
+            color: var(--muted);
+            font-weight: 400;
+            margin-top: 0.15rem;
+        }
+
+        .header-contact a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .header-contact a:hover {
+            text-decoration: underline;
+        }
+
         .header-right {
             display: flex;
             gap: 0.5rem;
@@ -268,7 +284,7 @@
     <header class="site-header">
         <div class="header-left">
             <span class="header-name">Gabriel Cohen</span>
-            <span class="header-title">Sysadmin / Devops &amp; Co</span>
+            <span class="header-contact">Petah Tikva, Israel &bull; <a href="mailto:cohen.gabriel@gmail.com">cohen.gabriel@gmail.com</a></span>
         </div>
         <div class="header-right">
             {% for lang in site.data.languages %}

@@ -18,7 +18,7 @@ description: "Gabriel Cohen — 20+ ans d'expertise en systèmes financiers, Cal
 <section class="section" id="impact">
     <h2><i class="fa-solid fa-chart-line"></i> Impact Clé</h2>
     <ul class="impact-list">
-        <li><i class="fa-solid fa-circle"></i> Piloté la <strong>migration Calypso</strong> multi-environnement (7 environnements / 30+ serveurs) avec un temps d'arrêt minimal</li>
+        <li><i class="fa-solid fa-circle"></i> Piloté avec succès une migration à grande échelle sur plusieurs environnements, assurant la continuité opérationnelle et démontrant la maîtrise d'infrastructures complexes à grande échelle</li>
         <li><i class="fa-solid fa-circle"></i> Réduit le temps de déploiement et éliminé les erreurs manuelles via l'<strong>automatisation CI/CD</strong></li>
         <li><i class="fa-solid fa-circle"></i> Amélioré la visibilité en production avec <strong>Zabbix, ELK, Grafana, AppDynamics</strong></li>
         <li><i class="fa-solid fa-circle"></i> Optimisé l'<strong>archivage Oracle</strong> pour les systèmes à haut volume</li>

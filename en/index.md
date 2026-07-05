@@ -18,7 +18,7 @@ description: "Gabriel Cohen — 20+ years in financial systems, Calypso, DevOps 
 <section class="section" id="impact">
     <h2><i class="fa-solid fa-chart-line"></i> Key Impact</h2>
     <ul class="impact-list">
-        <li><i class="fa-solid fa-circle"></i> Led multi-environment <strong>Calypso migration</strong> (7 environments / 30+ servers) with minimal downtime</li>
+        <li><i class="fa-solid fa-circle"></i> Successfully led a large-scale migration across multiple environments, ensuring business continuity and demonstrating mastery of complex infrastructure at scale</li>
         <li><i class="fa-solid fa-circle"></i> Reduced deployment time &amp; eliminated manual errors via <strong>CI/CD automation</strong></li>
         <li><i class="fa-solid fa-circle"></i> Improved production visibility with <strong>Zabbix, ELK, Grafana, AppDynamics</strong></li>
         <li><i class="fa-solid fa-circle"></i> Optimized <strong>Oracle archiving</strong> for high-volume systems</li>

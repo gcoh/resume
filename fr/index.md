@@ -113,9 +113,6 @@ description: "Gabriel Cohen — 20+ ans d'expertise en systèmes financiers, Cal
             <span class="tag">🇮🇱 Hébreu — Courant</span>
             <span class="tag">🇺🇸 Anglais — Professionnel</span>
         </div>
-        <p style="font-size:0.75rem;color:var(--muted);margin-top:0.5rem;text-align:right;">
-            <a href="#contact" style="color:var(--brown);">Contactez-moi</a>
-        </p>
     </section>
 
     <section class="section" id="contact">

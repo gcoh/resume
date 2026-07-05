@@ -1,9 +1,10 @@
 <!---
-  Layout: default
-  Supports LTR (English, French) and RTL (Hebrew)
-  Language is set via frontmatter 'lang' variable (en, fr, he)
+  Layout: default — Gabriel Cohen
+  Design: Beige background, Inter font, dark gray text, Font Awesome icons
+  Full-width layout
+  RTL support for Hebrew
 --->
-{% assign lang_code = page.lang | default: site.default_lang %}
+{% assign lang_code = page.lang | default: 'fr' %}
 {% assign lang_data = site.data.languages[lang_code] %}
 {% assign dir = lang_data.dir | default: 'ltr' %}
 <!DOCTYPE html>
@@ -19,207 +20,268 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <style>
         :root {
-            --bg: #fafafa;
-            --text: #2d2d2d;
-            --accent: #2563eb;
-            --card-bg: #ffffff;
-            --border: #e5e7eb;
-            --muted: #6b7280;
+            --bg: #f5f0e6;
+            --card: #ffffff;
+            --text: #3d3d3d;
+            --muted: #7a756e;
+            --accent: #4a7c8c;
+            --accent-hover: #3a6675;
+            --border: #e5dfd5;
+            --header-bg: #ffffff;
+            --radius: 10px;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
+        html, body {
+            height: 100%;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             background: var(--bg);
             color: var(--text);
             line-height: 1.7;
-            min-height: 100vh;
+            font-weight: 400;
+            font-size: 15px;
+            display: flex;
+            flex-direction: column;
         }
 
-        header {
-            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
-            color: white;
-            padding: 3rem 1rem;
-            text-align: center;
-        }
-
-        header h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
-        header p { font-size: 1.1rem; opacity: 0.85; }
-
-        nav {
-            background: var(--card-bg);
+        /* ── Header ── */
+        .site-header {
+            background: var(--header-bg);
             border-bottom: 1px solid var(--border);
-            padding: 0.75rem 1rem;
-            text-align: center;
+            padding: 1rem 2.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             position: sticky;
             top: 0;
-            z-index: 10;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            z-index: 100;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+            flex-shrink: 0;
+        }
+
+        .header-left {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
-            flex-wrap: wrap;
+            flex-direction: column;
         }
 
-        nav a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 500;
-            transition: opacity 0.2s;
-        }
-        nav a:hover { opacity: 0.7; }
-
-        /* Language switcher */
-        .lang-switcher {
-            display: flex;
-            gap: 0.35rem;
-            margin-left: 1.5rem;
-            align-items: center;
+        .header-name {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--text);
+            letter-spacing: -0.01em;
         }
 
-        .lang-switcher a {
-            padding: 0.25rem 0.6rem;
-            border-radius: 6px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            text-decoration: none;
+        .header-title {
+            font-size: 0.82rem;
             color: var(--muted);
-            border: 1px solid transparent;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+        }
+
+        .header-right {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .lang-flag {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.15rem;
+            text-decoration: none;
+            border: 2px solid transparent;
             transition: all 0.2s;
+            background: var(--bg);
+            cursor: pointer;
         }
 
-        .lang-switcher a:hover {
+        .lang-flag:hover {
             border-color: var(--accent);
-            color: var(--accent);
+            background: #eef4f6;
+            transform: scale(1.08);
         }
 
-        .lang-switcher a.active {
-            background: var(--accent);
-            color: white;
+        .lang-flag.active {
             border-color: var(--accent);
+            background: #e0edf2;
+            box-shadow: 0 0 0 3px rgba(74,124,140,0.15);
         }
 
+        /* ── Main ── */
         main {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem 1rem;
+            flex: 1;
+            width: 100%;
+            padding: 2.5rem 2.5rem 3rem;
         }
 
-        .card {
-            background: var(--card-bg);
+        .section {
+            background: var(--card);
             border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 2rem;
+            border-radius: var(--radius);
+            padding: 2.5rem;
             margin-bottom: 1.5rem;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.04);
-            transition: box-shadow 0.2s;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+            width: 100%;
         }
-        .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-        .card h2 { color: var(--accent); margin-bottom: 0.75rem; font-size: 1.3rem; }
+
+        .section h2 {
+            color: var(--text);
+            margin-bottom: 1rem;
+            font-size: 1.35rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .section h2 i {
+            color: var(--accent);
+            width: 1.3em;
+            text-align: center;
+        }
+
+        .section h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 0.4rem;
+        }
+
+        /* Tags / Skills */
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+        }
 
         .tag {
             display: inline-block;
-            background: #eff6ff;
-            color: var(--accent);
-            padding: 0.2rem 0.7rem;
-            border-radius: 9999px;
-            font-size: 0.8rem;
-            margin: 0.2rem;
+            background: #eef4f6;
+            color: #3a6c7c;
+            padding: 0.3rem 0.85rem;
+            border-radius: 6px;
+            font-size: 0.84rem;
             font-weight: 500;
+            letter-spacing: 0.01em;
         }
 
-        /* Language selector page (root index) */
-        .lang-selector {
-            display: flex;
-            gap: 1.5rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 2rem;
-        }
-
-        .lang-card {
-            background: var(--card-bg);
-            border: 2px solid var(--border);
-            border-radius: 16px;
-            padding: 2.5rem 2rem;
-            text-align: center;
-            min-width: 180px;
-            transition: all 0.2s;
-            text-decoration: none;
-            color: var(--text);
-        }
-        .lang-card:hover {
-            border-color: var(--accent);
-            box-shadow: 0 8px 24px rgba(37,99,235,0.12);
-            transform: translateY(-2px);
-        }
-        .lang-card .flag { font-size: 3rem; margin-bottom: 0.75rem; display: block; }
-        .lang-card .name { font-size: 1.3rem; font-weight: 700; }
-
-        footer {
-            text-align: center;
-            padding: 2rem 1rem;
-            color: var(--muted);
-            font-size: 0.9rem;
-        }
-        footer a { color: var(--accent); text-decoration: none; }
-
+        /* Buttons */
         .btn {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
             background: var(--accent);
-            color: white;
+            color: #fff;
             padding: 0.6rem 1.5rem;
-            border-radius: 8px;
+            border-radius: 7px;
             text-decoration: none;
             font-weight: 600;
-            transition: opacity 0.2s;
+            font-size: 0.9rem;
+            transition: background 0.2s, transform 0.15s;
+            border: none;
+            cursor: pointer;
         }
-        .btn:hover { opacity: 0.85; }
+
+        .btn:hover {
+            background: var(--accent-hover);
+            transform: translateY(-1px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--accent);
+            border: 1.5px solid var(--accent);
+        }
+
+        .btn-outline:hover {
+            background: #eef4f6;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1.5rem 2.5rem 2rem;
+            color: var(--muted);
+            font-size: 0.82rem;
+            border-top: 1px solid var(--border);
+            flex-shrink: 0;
+        }
+
+        footer a { color: var(--accent); text-decoration: none; font-weight: 500; }
+        footer a:hover { text-decoration: underline; }
+        footer .fa-heart { color: #c46767; }
 
         /* RTL overrides */
         [dir="rtl"] body {
             direction: rtl;
             text-align: right;
         }
-        [dir="rtl"] .lang-switcher {
-            margin-left: 0;
-            margin-right: 1.5rem;
-        }
-        [dir="rtl"] nav { direction: ltr; } /* keep nav LTR for language switcher */
 
-        @media (max-width: 600px) {
-            header h1 { font-size: 1.8rem; }
-            .card { padding: 1.25rem; }
-            nav { gap: 0.5rem; }
+        [dir="rtl"] .site-header { direction: rtl; }
+        [dir="rtl"] .header-right { direction: ltr; }
+
+        @media (max-width: 768px) {
+            .site-header {
+                padding: 0.85rem 1.25rem;
+                flex-direction: column;
+                gap: 0.6rem;
+                text-align: center;
+            }
+
+            .header-name { font-size: 1rem; }
+
+            main { padding: 1.5rem 1rem 2rem; }
+
+            .section { padding: 1.5rem; }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>{{ site.data.i18n[lang_code].heading | default: "👋 Gabriel - CV & Portfolio" }}</h1>
-        <p>{{ site.data.i18n[lang_code].subtitle | default: site.description }}</p>
-    </header>
 
-    <nav>
-        <a href="{{ site.baseurl }}/{{ lang_code }}/">{{ site.data.i18n[lang_code].home | default: "Home" }}</a>
-        <a href="{{ site.baseurl }}/{{ lang_code }}/#cv">{{ site.data.i18n[lang_code].cv | default: "CV" }}</a>
-        <a href="{{ site.baseurl }}/{{ lang_code }}/#portfolio">{{ site.data.i18n[lang_code].portfolio | default: "Portfolio" }}</a>
-        <a href="{{ site.baseurl }}/{{ lang_code }}/#contact">{{ site.data.i18n[lang_code].contact | default: "Contact" }}</a>
-
-        <span class="lang-switcher">
+    <header class="site-header">
+        <div class="header-left">
+            <span class="header-name">Gabriel Cohen</span>
+            <span class="header-title">Sysadmin / Devops &amp; Co</span>
+        </div>
+        <div class="header-right">
             {% for lang in site.data.languages %}
                 {% assign l = lang[1] %}
-                {% assign lang_url = site.baseurl | append: '/' | append: l.code | append: '/' %}
-                <a href="{{ lang_url }}"
-                   class="{% if l.code == lang_code %}active{% endif %}"
-                   title="{{ l.name }}">{{ l.flag }} {{ l.code | upcase }}</a>
+                <a href="{{ site.baseurl }}/{{ l.code }}/"
+                   class="lang-flag{% if l.code == lang_code %} active{% endif %}"
+                   title="{{ l.name }}"
+                   aria-label="{{ l.name }}">
+                    {{ l.flag }}
+                </a>
             {% endfor %}
-        </span>
-    </nav>
+        </div>
+    </header>
 
     <main>
         {{ content }}
@@ -227,11 +289,12 @@
 
     <footer>
         <p>
-            &copy; {{ 'now' | date: "%Y" }} {{ site.author }} —
-            {{ site.data.i18n[lang_code].powered_by | default: "Powered by" }}
-            <a href="https://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a> &
-            <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>
+            &copy; {{ 'now' | date: "%Y" }} Gabriel Cohen &mdash;
+            {{ site.data.i18n[lang_code].powered_by | default: "Built with" }}
+            <i class="fa-brands fa-github"></i> <a href="https://github.com/gcoh/gcoh.github.io" target="_blank" rel="noopener">GitHub</a>
+            &amp; <i class="fa-solid fa-heart"></i>
         </p>
     </footer>
+
 </body>
 </html>

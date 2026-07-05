@@ -1,32 +1,22 @@
-# i18n strings for UI elements
-# Used by _layouts/default.html
-
-en:
-  heading: "👋 Gabriel - CV & Portfolio"
-  subtitle: "Personal website, CV and portfolio"
-  home: "Home"
-  cv: "CV / Resume"
-  portfolio: "Portfolio"
-  contact: "Contact"
-  powered_by: "Powered by"
-  select_language: "Choose your language"
+# i18n strings — UI elements
 
 fr:
-  heading: "👋 Gabriel - CV & Portfolio"
-  subtitle: "Site personnel, CV et portfolio"
+  powered_by: "Propulsé par"
   home: "Accueil"
-  cv: "CV / Résumé"
+  cv: "CV"
   portfolio: "Portfolio"
   contact: "Contact"
-  powered_by: "Propulsé par"
-  select_language: "Choisissez votre langue"
+
+en:
+  powered_by: "Built with"
+  home: "Home"
+  cv: "Resume"
+  portfolio: "Portfolio"
+  contact: "Contact"
 
 he:
-  heading: "👋 גבריאל - קורות חיים ופורטפוליו"
-  subtitle: "אתר אישי, קורות חיים ופורטפוליו"
+  powered_by: "מופעל על ידי"
   home: "דף הבית"
   cv: "קורות חיים"
   portfolio: "פורטפוליו"
   contact: "צור קשר"
-  powered_by: "מופעל על ידי"
-  select_language: "בחר שפה"

@@ -1,31 +1,21 @@
-# Site settings
-title: "Gabriel - CV & Portfolio"
-description: "Personal website, CV and portfolio"
-author: "Gabriel"
+# ── Gabriel Cohen — CV Site ──
+title: "Gabriel Cohen — Sysadmin / Devops & Co"
+description: "CV et portfolio professionnel"
+author: "Gabriel Cohen"
 github_username: gcoh
+default_lang: fr
 
-# URL configuration
-# Projet site (ce repo) : https://gcoh.github.io/resume
-# Si tu renommes le repo en gcoh.github.io : https://gcoh.github.io
+# URL (user site — repo gcoh.github.io)
 baseurl: ""
 url: "https://gcoh.github.io"
 
-# Language settings
-default_lang: en
-languages:
-  en: English
-  fr: Français
-  he: עברית
-
-# Build settings
+# Build
 markdown: kramdown
 
-# Plugins (GitHub Pages compatible)
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# Exclude from build
 exclude:
   - Gemfile
   - Gemfile.lock

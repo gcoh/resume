@@ -18,11 +18,11 @@ description: "Gabriel Cohen — 20+ ans d'expertise en systèmes financiers, Cal
 <section class="section" id="impact">
     <h2><i class="fa-solid fa-chart-line"></i> Impact Clé</h2>
     <ul class="impact-list">
-        <li><i class="fa-solid fa-circle"></i> J'ai piloté avec succès une migration à grande échelle sur plusieurs environnements, assurant la continuité opérationnelle et démontrant ma maîtrise d'infrastructures complexes à grande échelle</li>
-        <li><i class="fa-solid fa-circle"></i> J'ai réduit le temps de déploiement et éliminé les erreurs manuelles via l'<strong>automatisation CI/CD</strong></li>
-        <li><i class="fa-solid fa-circle"></i> J'ai amélioré la visibilité en production avec <strong>Zabbix, ELK, Grafana, AppDynamics</strong></li>
-        <li><i class="fa-solid fa-circle"></i> J'ai optimisé l'<strong>archivage Oracle</strong> pour les systèmes à haut volume</li>
-        <li><i class="fa-solid fa-circle"></i> J'ai fait le lien entre les équipes métier, data et infrastructure pour assurer la continuité</li>
+        <li><i class="fa-solid fa-circle"></i> <strong>Pilotage</strong> d'une migration à grande échelle sur plusieurs environnements, assurant la continuité opérationnelle et démontrant ma maîtrise d'infrastructures complexes à grande échelle</li>
+        <li><i class="fa-solid fa-circle"></i> <strong>Réduction</strong> du temps de déploiement et élimination des erreurs manuelles via l'automatisation CI/CD</li>
+        <li><i class="fa-solid fa-circle"></i> <strong>Amélioration</strong> de la visibilité en production avec Zabbix, ELK, Grafana, AppDynamics</li>
+        <li><i class="fa-solid fa-circle"></i> <strong>Optimisation</strong> de l'archivage Oracle pour les systèmes à haut volume</li>
+        <li><i class="fa-solid fa-circle"></i> <strong>Mise en relation</strong> entre les équipes métier, data et infrastructure pour assurer la continuité</li>
     </ul>
 </section>
 

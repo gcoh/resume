@@ -18,11 +18,11 @@ description: "Gabriel Cohen — 20+ years in financial systems, Calypso, DevOps 
 <section class="section" id="impact">
     <h2><i class="fa-solid fa-chart-line"></i> Key Impact</h2>
     <ul class="impact-list">
-        <li><i class="fa-solid fa-circle"></i> Successfully led a large-scale migration across multiple environments, ensuring business continuity and demonstrating my mastery of complex infrastructure at scale</li>
-        <li><i class="fa-solid fa-circle"></i> Reduced deployment time &amp; eliminated manual errors via <strong>CI/CD automation</strong></li>
-        <li><i class="fa-solid fa-circle"></i> Improved production visibility with <strong>Zabbix, ELK, Grafana, AppDynamics</strong></li>
-        <li><i class="fa-solid fa-circle"></i> Optimized <strong>Oracle archiving</strong> for high-volume systems</li>
-        <li><i class="fa-solid fa-circle"></i> Bridged business, data, and infrastructure teams for delivery continuity</li>
+        <li><i class="fa-solid fa-circle"></i> <strong>Orchestrating</strong> large-scale migrations across multiple environments, ensuring business continuity and demonstrating mastery of complex infrastructure at scale</li>
+        <li><i class="fa-solid fa-circle"></i> <strong>Reducing</strong> deployment time and eliminating manual errors via CI/CD automation</li>
+        <li><i class="fa-solid fa-circle"></i> <strong>Improving</strong> production visibility with Zabbix, ELK, Grafana, AppDynamics</li>
+        <li><i class="fa-solid fa-circle"></i> <strong>Optimizing</strong> Oracle archiving for high-volume systems</li>
+        <li><i class="fa-solid fa-circle"></i> <strong>Bridging</strong> business, data, and infrastructure teams for delivery continuity</li>
     </ul>
 </section>
 

@@ -7,7 +7,7 @@ github_username: gcoh
 # URL configuration
 # Projet site (ce repo) : https://gcoh.github.io/resume
 # Si tu renommes le repo en gcoh.github.io : https://gcoh.github.io
-baseurl: "/resume"
+baseurl: ""
 url: "https://gcoh.github.io"
 
 # Language settings

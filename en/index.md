@@ -86,7 +86,7 @@ description: "Gabriel Cohen — 20+ years in financial systems, Calypso, DevOps 
     <div style="margin-top:1rem;">
         <h3><i class="fa-solid fa-code-branch"></i>&ensp;DevOps &amp; Tools</h3>
         <div class="tags" style="margin-top:0.3rem;">
-            <span class="tag">Jenkins</span><span class="tag">Docker</span><span class="tag">CI/CD</span><span class="tag">Control-M</span><span class="tag">Git</span><span class="tag">GitHub Actions</span><span class="tag">n8n</span>
+            <span class="tag">Jenkins</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">CI/CD</span><span class="tag">Control-M</span><span class="tag">Harbor</span><span class="tag">ArgoCD</span><span class="tag">Rancher</span><span class="tag">Portainer</span><span class="tag">Gitea</span><span class="tag">MinIO</span><span class="tag">Headlamp</span><span class="tag">AWS</span><span class="tag">Traefik</span><span class="tag">Git</span><span class="tag">GitHub Actions</span><span class="tag">n8n</span>
         </div>
     </div>
 

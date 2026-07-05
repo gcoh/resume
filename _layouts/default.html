@@ -27,9 +27,12 @@
 
     <style>
         :root {
-            --brown: #4a3020;
-            --brown-light: #5c3d2e;
-            --brown-dark: #3a2518;
+            --sidebar-bg: #1e293b;
+            --sidebar-text: #cbd5e1;
+            --sidebar-muted: #94a3b8;
+            --sidebar-active: #e2e8f0;
+            --sidebar-hover: #334155;
+            --accent-brown: #4a3020;
             --bg: #f5f0e6;
             --card: #ffffff;
             --text: #3d3d3d;
@@ -57,8 +60,8 @@
         .sidebar {
             width: var(--sidebar-w);
             min-width: var(--sidebar-w);
-            background: var(--brown);
-            color: #e8ddd3;
+            background: var(--sidebar-bg);
+            color: var(--sidebar-text);
             display: flex;
             flex-direction: column;
             position: fixed;
@@ -94,15 +97,8 @@
 
         .sidebar-brand .role {
             font-size: 0.68rem;
-            color: #c4afa0;
+            color: var(--sidebar-muted);
             font-weight: 500;
-        }
-
-        .sidebar-brand .loc {
-            font-size: 0.64rem;
-            color: #a89484;
-            font-weight: 400;
-            margin-top: 0.1rem;
         }
 
         /* Sidebar nav */
@@ -116,7 +112,7 @@
             align-items: center;
             gap: 0.6rem;
             padding: 0.5rem 1.1rem;
-            color: #c4afa0;
+            color: var(--sidebar-muted);
             text-decoration: none;
             font-size: 0.8rem;
             font-weight: 500;
@@ -128,7 +124,7 @@
         .sidebar-nav a.active {
             color: #fff;
             background: rgba(255,255,255,0.08);
-            border-left-color: #c4afa0;
+            border-left-color: var(--sidebar-active);
         }
 
         .sidebar-nav a i { width: 1.1em; text-align: center; font-size: 0.85rem; }
@@ -214,7 +210,7 @@
         }
 
         .section h2 {
-            color: var(--brown);
+            color: var(--accent-brown);
             font-size: 1.05rem;
             font-weight: 700;
             display: flex;
@@ -226,7 +222,7 @@
         }
 
         .section h2 i {
-            color: var(--brown);
+            color: var(--accent-brown);
             width: 1.2em;
             opacity: 0.8;
             font-size: 0.9rem;
@@ -252,7 +248,7 @@
         .hero h2 {
             font-size: 1.35rem;
             font-weight: 700;
-            color: var(--brown);
+            color: var(--accent-brown);
             border: none;
             padding: 0;
             margin: 0;
@@ -299,7 +295,7 @@
         }
 
         .impact-list li i {
-            color: var(--brown);
+            color: var(--accent-brown);
             margin-top: 0.15rem;
             flex-shrink: 0;
             font-size: 0.65rem;
@@ -344,7 +340,7 @@
         .skill-group h3 {
             font-size: 0.76rem;
             margin-bottom: 0.25rem;
-            color: var(--brown);
+            color: var(--accent-brown);
         }
 
         .skill-group .tags {
@@ -385,7 +381,7 @@
         .contact-form input:focus,
         .contact-form textarea:focus {
             outline: none;
-            border-color: var(--brown);
+            border-color: var(--accent-brown);
             box-shadow: 0 0 0 2px rgba(74,48,32,0.08);
         }
 
@@ -401,7 +397,7 @@
         }
 
         .btn-submit {
-            background: var(--brown);
+            background: var(--accent-brown);
             color: #fff;
             border: none;
             padding: 0.45rem 1.2rem;
@@ -415,7 +411,7 @@
         }
 
         .btn-submit:hover {
-            background: var(--brown-dark);
+            background: #0f172a;
         }
 
         .form-success {
@@ -433,7 +429,7 @@
             font-size: 0.7rem;
         }
 
-        footer a { color: var(--brown); text-decoration: none; }
+        footer a { color: var(--accent-brown); text-decoration: none; }
         footer .fa-heart { color: #c46767; }
 
         /* Print */
@@ -458,7 +454,7 @@
         }
         [dir="rtl"] .sidebar-nav a:hover,
         [dir="rtl"] .sidebar-nav a.active {
-            border-right-color: #c4afa0;
+            border-right-color: var(--sidebar-active);
         }
         [dir="rtl"] .main {
             margin-left: 0;
@@ -511,7 +507,6 @@
             <div>
                 <div class="name">Gabriel Cohen</div>
                 <div class="role">Tech Lead &amp; Architect</div>
-                <div class="loc">Petah Tikva, Isr &bull; <a href="#contact" style="color:#c4afa0;text-decoration:none;">Contact me</a></div>
             </div>
         </a>
 

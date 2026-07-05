@@ -421,6 +421,70 @@
             font-size: 0.85rem;
         }
 
+        /* ── Modal Dialog ── */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-overlay.show { display: flex; }
+
+        .modal-dialog {
+            background: #fff;
+            border-radius: 14px;
+            padding: 2rem 2.5rem;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+            animation: modalIn 0.3s ease;
+        }
+
+        @keyframes modalIn {
+            from { opacity: 0; transform: translateY(20px) scale(0.95); }
+            to   { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        .modal-dialog .modal-icon {
+            font-size: 3rem;
+            margin-bottom: 0.75rem;
+            color: #2d6a4f;
+        }
+
+        .modal-dialog h3 {
+            font-size: 1.1rem;
+            color: var(--heading);
+            margin-bottom: 0.4rem;
+        }
+
+        .modal-dialog p {
+            font-size: 0.85rem;
+            color: var(--muted);
+            margin-bottom: 1.25rem;
+        }
+
+        .modal-dialog .btn-close {
+            background: var(--sidebar-bg);
+            color: #fff;
+            border: none;
+            padding: 0.5rem 2rem;
+            border-radius: 7px;
+            font-family: inherit;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .modal-dialog .btn-close:hover {
+            background: var(--sidebar-hover);
+        }
+
         /* Footer */
         footer {
             text-align: center;
@@ -610,8 +674,24 @@
         </footer>
     </main>
 
+    <!-- Modal -->
+    <div class="modal-overlay" id="modal">
+        <div class="modal-dialog">
+            <div class="modal-icon"><i class="fa-solid fa-circle-check"></i></div>
+            <h3 id="modal-title">Message sent!</h3>
+            <p id="modal-text">I'll get back to you soon.</p>
+            <button class="btn-close" onclick="document.getElementById('modal').classList.remove('show')">OK</button>
+        </div>
+    </div>
+
     <script>
-        // AJAX contact form submission — stays on site, shows dialog
+        // AJAX contact form submission with modern modal
+        function showModal(title, text) {
+            document.getElementById('modal-title').textContent = title;
+            document.getElementById('modal-text').textContent = text;
+            document.getElementById('modal').classList.add('show');
+        }
+
         document.querySelectorAll('.contact-form').forEach(function(form) {
             form.addEventListener('submit', function(e) {
                 e.preventDefault();
@@ -627,20 +707,25 @@
                 })
                 .then(function(response) {
                     if (response.ok) {
-                        alert('Message sent! / Message envoyé ! / ההודעה נשלחה!');
+                        showModal('Message sent! / Envoyé ! / נשלח!', 'Thanks! I\'ll get back to you soon. / Merci ! Je reviens vers vous rapidement. / תודה! אחזור אליך בהקדם.');
                         form.reset();
                     } else {
-                        alert('Error. Please try again or email me directly.');
+                        showModal('Error', 'Please try again or email me directly.');
                     }
                 })
                 .catch(function() {
-                    alert('Error. Please try again or email me directly.');
+                    showModal('Error', 'Please try again or email me directly.');
                 })
                 .finally(function() {
                     btn.innerHTML = originalText;
                     btn.disabled = false;
                 });
             });
+        });
+
+        // Close modal on overlay click
+        document.getElementById('modal').addEventListener('click', function(e) {
+            if (e.target === this) this.classList.remove('show');
         });
     </script>
 

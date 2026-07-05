@@ -432,14 +432,35 @@
         footer a { color: var(--accent-brown); text-decoration: none; }
         footer .fa-heart { color: #c46767; }
 
-        /* Print */
+        /* Print — optimized for 1-page PDF */
         @media print {
-            body { background: #fff; }
+            @page { margin: 0.5cm; size: A4; }
+            * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            body { background: #fff; font-size: 10px; line-height: 1.35; }
             .sidebar { display: none; }
             .main { margin-left: 0; max-width: 100%; padding: 0; }
-            .section { box-shadow: none; border: none; break-inside: avoid; padding: 0.5rem 0; }
-            .btn-submit, .btn-pdf { display: none; }
-            .contact-form input, .contact-form textarea { border: none; background: none; }
+            .hero { padding: 0 0 0.2rem; margin: 0; }
+            .hero h2 { font-size: 1.1rem; }
+            .hero .sub { font-size: 0.7rem; }
+            .section { box-shadow: none; border: 1px solid #ddd; break-inside: avoid; padding: 0.35rem 0.5rem; margin-bottom: 0.3rem; border-radius: 4px; }
+            .section h2 { font-size: 0.8rem; margin-bottom: 0.2rem; padding-bottom: 0.2rem; }
+            .section h3 { font-size: 0.7rem; }
+            .section p { font-size: 0.68rem; }
+            .impact-list { grid-template-columns: 1fr 1fr; gap: 0 0.5rem; }
+            .impact-list li { font-size: 0.65rem; padding: 0.15rem 0; }
+            .exp-grid { grid-template-columns: 1fr 1fr 1fr; gap: 0.3rem; }
+            .exp-item h3 { font-size: 0.68rem; }
+            .exp-item .date { font-size: 0.6rem; }
+            .exp-item ul { font-size: 0.6rem; padding-left: 0.8rem; }
+            .skills-grid { grid-template-columns: 1fr 1fr 1fr; gap: 0.2rem 0.5rem; }
+            .skill-group h3 { font-size: 0.65rem; }
+            .skill-group .tag { font-size: 0.58rem; padding: 0.08rem 0.3rem; }
+            .bottom-cols { grid-template-columns: 1fr 1fr; gap: 0.3rem; }
+            .bottom-cols .section p { font-size: 0.65rem; }
+            .tag { font-size: 0.6rem; padding: 0.1rem 0.35rem; }
+            .btn-submit, .btn-pdf, .sidebar-langs, .contact-form, footer { display: none; }
+            #contact { display: none; }
+            #languages { border: none; }
         }
 
         /* RTL */

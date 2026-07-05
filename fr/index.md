@@ -95,7 +95,7 @@ description: "Gabriel Cohen — 20+ ans d'expertise en systèmes financiers, Cal
 <div class="bottom-cols">
     <section class="section" id="ai">
         <h2><i class="fa-solid fa-robot"></i> IA &amp; Automatisation</h2>
-        <p style="font-size:0.82rem;">Intégration d'outils d'IA (LLMs) dans les flux opérationnels, automatisation des processus via <strong>n8n</strong> et APIs, développement de solutions de data et reporting.</p>
+        <p style="font-size:0.82rem;">Intégration d'outils d'IA (LLMs) dans les flux opérationnels, automatisation des processus via <strong>n8n</strong> et APIs, développement de solutions de data et reporting. Usage de <strong>Ollama, Hermes, PyTorch, FastAPI, MCP</strong>. Pilotage de <strong>K8S</strong>, build et monitoring avec <strong>Agent</strong>.</p>
     </section>
 
     <section class="section" id="education">

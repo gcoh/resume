@@ -95,7 +95,7 @@ description: "Gabriel Cohen — 20+ years in financial systems, Calypso, DevOps 
 <div class="bottom-cols">
     <section class="section" id="ai">
         <h2><i class="fa-solid fa-robot"></i> AI &amp; Automation</h2>
-        <p style="font-size:0.82rem;">Integrated AI tools (LLMs) into operational workflows, automated processes using <strong>n8n</strong> and APIs, and developed data/reporting automation solutions.</p>
+        <p style="font-size:0.82rem;">Integrated AI tools (LLMs) into operational workflows, automated processes using <strong>n8n</strong> and APIs, and developed data/reporting automation solutions. Using <strong>Ollama, Hermes, PyTorch, FastAPI, MCP</strong>. Orchestrating <strong>K8s</strong>, build and monitoring with <strong>Agent</strong>.</p>
     </section>
 
     <section class="section" id="education">

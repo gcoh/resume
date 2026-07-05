@@ -1,0 +1,26 @@
+# Site settings
+title: "Gabriel - CV & Portfolio"
+description: "Mon site personnel, CV et portfolio"
+author: "Gabriel"
+
+# URL configuration
+# Pour un site "projet" (repo resume) : https://gcoh.github.io/resume
+# Pour un site "utilisateur" (repo gcoh.github.io) : https://gcoh.github.io
+baseurl: "/resume"
+url: "https://gcoh.github.io"
+
+# Build settings
+markdown: kramdown
+remote_theme: pages-themes/minimal
+
+# Plugins
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

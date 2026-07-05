@@ -546,5 +546,39 @@
         </footer>
     </main>
 
+    <script>
+        // AJAX contact form submission — stays on site, shows dialog
+        document.querySelectorAll('.contact-form').forEach(function(form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                var btn = form.querySelector('.btn-submit');
+                var originalText = btn.innerHTML;
+                btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+                btn.disabled = true;
+
+                fetch(form.action, {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: { 'Accept': 'application/json' }
+                })
+                .then(function(response) {
+                    if (response.ok) {
+                        alert('Message sent! / Message envoyé ! / ההודעה נשלחה!');
+                        form.reset();
+                    } else {
+                        alert('Error. Please try again or email me directly.');
+                    }
+                })
+                .catch(function() {
+                    alert('Error. Please try again or email me directly.');
+                })
+                .finally(function() {
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
+                });
+            });
+        });
+    </script>
+
 </body>
 </html>

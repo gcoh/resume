@@ -12,13 +12,13 @@ description: "Gabriel Cohen — 20+ years in financial systems, Calypso, DevOps 
 
 <section class="section" id="summary">
     <h2><i class="fa-solid fa-user-tie"></i> Professional Summary</h2>
-    <p>Senior expert in financial systems, able to bridge business and technical teams. Specialized in trading platforms, CI/CD, and data architectures, he has led several complex migrations and implemented automation that significantly reduces operational costs.</p>
+    <p>Senior expert in financial systems, I bridge business and technical teams. Specialized in trading platforms, CI/CD, and data architectures, I have led several complex migrations and implemented automation that significantly reduces operational costs.</p>
 </section>
 
 <section class="section" id="impact">
     <h2><i class="fa-solid fa-chart-line"></i> Key Impact</h2>
     <ul class="impact-list">
-        <li><i class="fa-solid fa-circle"></i> Successfully led a large-scale migration across multiple environments, ensuring business continuity and demonstrating mastery of complex infrastructure at scale</li>
+        <li><i class="fa-solid fa-circle"></i> Successfully led a large-scale migration across multiple environments, ensuring business continuity and demonstrating my mastery of complex infrastructure at scale</li>
         <li><i class="fa-solid fa-circle"></i> Reduced deployment time &amp; eliminated manual errors via <strong>CI/CD automation</strong></li>
         <li><i class="fa-solid fa-circle"></i> Improved production visibility with <strong>Zabbix, ELK, Grafana, AppDynamics</strong></li>
         <li><i class="fa-solid fa-circle"></i> Optimized <strong>Oracle archiving</strong> for high-volume systems</li>

@@ -12,17 +12,17 @@ description: "Gabriel Cohen — 20+ ans d'expertise en systèmes financiers, Cal
 
 <section class="section" id="summary">
     <h2><i class="fa-solid fa-user-tie"></i> Résumé Professionnel</h2>
-    <p>Expert senior en systèmes financiers, capable de faire le pont entre les équipes métier et technique. Spécialisé dans les plateformes de trading, le CI/CD et les architectures data, il a piloté plusieurs migrations complexes et mis en place des automatisations réduisant significativement les coûts opérationnels.</p>
+    <p>Expert senior en systèmes financiers, je fais le pont entre les équipes métier et technique. Spécialisé dans les plateformes de trading, le CI/CD et les architectures data, j'ai piloté plusieurs migrations complexes et mis en place des automatisations réduisant significativement les coûts opérationnels.</p>
 </section>
 
 <section class="section" id="impact">
     <h2><i class="fa-solid fa-chart-line"></i> Impact Clé</h2>
     <ul class="impact-list">
-        <li><i class="fa-solid fa-circle"></i> Piloté avec succès une migration à grande échelle sur plusieurs environnements, assurant la continuité opérationnelle et démontrant la maîtrise d'infrastructures complexes à grande échelle</li>
-        <li><i class="fa-solid fa-circle"></i> Réduit le temps de déploiement et éliminé les erreurs manuelles via l'<strong>automatisation CI/CD</strong></li>
-        <li><i class="fa-solid fa-circle"></i> Amélioré la visibilité en production avec <strong>Zabbix, ELK, Grafana, AppDynamics</strong></li>
-        <li><i class="fa-solid fa-circle"></i> Optimisé l'<strong>archivage Oracle</strong> pour les systèmes à haut volume</li>
-        <li><i class="fa-solid fa-circle"></i> Fait le lien entre les équipes métier, data et infrastructure pour assurer la continuité</li>
+        <li><i class="fa-solid fa-circle"></i> J'ai piloté avec succès une migration à grande échelle sur plusieurs environnements, assurant la continuité opérationnelle et démontrant ma maîtrise d'infrastructures complexes à grande échelle</li>
+        <li><i class="fa-solid fa-circle"></i> J'ai réduit le temps de déploiement et éliminé les erreurs manuelles via l'<strong>automatisation CI/CD</strong></li>
+        <li><i class="fa-solid fa-circle"></i> J'ai amélioré la visibilité en production avec <strong>Zabbix, ELK, Grafana, AppDynamics</strong></li>
+        <li><i class="fa-solid fa-circle"></i> J'ai optimisé l'<strong>archivage Oracle</strong> pour les systèmes à haut volume</li>
+        <li><i class="fa-solid fa-circle"></i> J'ai fait le lien entre les équipes métier, data et infrastructure pour assurer la continuité</li>
     </ul>
 </section>
 

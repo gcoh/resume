@@ -4,7 +4,7 @@
   Full-width layout
   RTL support for Hebrew
 --->
-{% assign lang_code = page.lang | default: 'fr' %}
+{% assign lang_code = page.lang | default: 'en' %}
 {% assign lang_data = site.data.languages[lang_code] %}
 {% assign dir = lang_data.dir | default: 'ltr' %}
 <!DOCTYPE html>
@@ -282,9 +282,15 @@
 <body>
 
     <header class="site-header">
-        <div class="header-left">
-            <span class="header-name">Gabriel Cohen</span>
-            <span class="header-contact">Petah Tikva, Israel &bull; <a href="mailto:cohen.gabriel@gmail.com">cohen.gabriel@gmail.com</a></span>
+        <!-- Logo + Name -->
+        <div style="display:flex;align-items:center;gap:0.75rem;">
+            <a href="{{ site.baseurl }}/" style="display:flex;align-items:center;text-decoration:none;">
+                <img src="{{ site.baseurl }}/assets/logo.svg" alt="GC" width="42" height="42" style="display:block;">
+            </a>
+            <div class="header-left">
+                <span class="header-name">Gabriel Cohen</span>
+                <span class="header-contact">Petah Tikva, Israel &bull; <a href="mailto:cohen.gabriel@gmail.com">cohen.gabriel@gmail.com</a></span>
+            </div>
         </div>
         <div class="header-right">
             {% for lang in site.data.languages %}

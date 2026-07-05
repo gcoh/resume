@@ -1,16 +1,16 @@
-# Language metadata for the language switcher
-
-fr:
-  code: fr
-  name: Français
-  dir: ltr
-  flag: "🇫🇷"
+# Language metadata — ordered by priority
 
 en:
   code: en
   name: English
   dir: ltr
   flag: "🇺🇸"
+
+fr:
+  code: fr
+  name: Français
+  dir: ltr
+  flag: "🇫🇷"
 
 he:
   code: he

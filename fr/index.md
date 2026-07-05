@@ -5,143 +5,128 @@ title: "Gabriel Cohen — Tech Lead / Architecte Solution"
 description: "Gabriel Cohen — 20+ ans d'expertise en systèmes financiers, Calypso, DevOps & plateformes de données"
 ---
 
-<!-- Hero -->
-<section class="section" style="text-align:center;border:none;box-shadow:none;background:transparent;padding-bottom:1rem;">
-    <h2 style="border:none;justify-content:center;font-size:1.5rem;font-weight:600;">
-        Tech Lead / Architecte Solution – Systèmes Financiers &amp; Plateformes de Données
-    </h2>
-    <p style="color:var(--muted);font-size:1rem;">Calypso &bull; CI/CD &bull; Cloud &bull; Automatisation</p>
+<section class="hero section">
+    <h2>Tech Lead / Architecte Solution – Systèmes Financiers &amp; Plateformes de Données</h2>
+    <p class="sub">20+ ans d'expérience en environnements critiques à grande échelle</p>
 </section>
 
-<!-- Résumé Professionnel -->
-<section class="section">
+<section class="section" id="summary">
     <h2><i class="fa-solid fa-user-tie"></i> Résumé Professionnel</h2>
-    <p>Expert senior en systèmes financiers avec <strong>plus de 20 ans</strong> d'expérience dans la livraison et l'exploitation d'environnements critiques à grande échelle. Spécialisé en <strong>Calypso (Nasdaq)</strong>, CI/CD et plateformes de données. Capacité avérée à faire le pont entre métier et technologie, piloter des migrations complexes et déployer l'automatisation qui améliore la fiabilité et réduit les coûts opérationnels.</p>
+    <p>Expert senior en systèmes financiers, spécialisé en <strong>Calypso (Nasdaq)</strong>, CI/CD et plateformes de données. Capacité avérée à faire le pont entre métier et technologie, piloter des migrations complexes et déployer l'automatisation qui améliore la fiabilité et réduit les coûts opérationnels.</p>
 </section>
 
-<!-- Impact Clé -->
-<section class="section">
+<section class="section" id="impact">
     <h2><i class="fa-solid fa-chart-line"></i> Impact Clé</h2>
-    <ul style="list-style:none;padding:0;">
-        <li style="padding:0.5rem 0;border-bottom:1px solid var(--border);">
-            <i class="fa-solid fa-check" style="color:var(--accent);margin-right:0.6rem;"></i>
-            Piloté la <strong>migration Calypso</strong> multi-environnement (7 environnements / 30+ serveurs) avec un temps d'arrêt minimal
-        </li>
-        <li style="padding:0.5rem 0;border-bottom:1px solid var(--border);">
-            <i class="fa-solid fa-check" style="color:var(--accent);margin-right:0.6rem;"></i>
-            Réduit le temps de déploiement et éliminé les erreurs manuelles grâce à l'<strong>automatisation CI/CD</strong>
-        </li>
-        <li style="padding:0.5rem 0;border-bottom:1px solid var(--border);">
-            <i class="fa-solid fa-check" style="color:var(--accent);margin-right:0.6rem;"></i>
-            Amélioré la visibilité en production avec une stack de monitoring (<strong>Zabbix, ELK, Grafana, AppDynamics</strong>)
-        </li>
-        <li style="padding:0.5rem 0;border-bottom:1px solid var(--border);">
-            <i class="fa-solid fa-check" style="color:var(--accent);margin-right:0.6rem;"></i>
-            Optimisé l'<strong>archivage Oracle</strong> pour les systèmes à haut volume
-        </li>
-        <li style="padding:0.5rem 0;">
-            <i class="fa-solid fa-check" style="color:var(--accent);margin-right:0.6rem;"></i>
-            Fait le lien entre les équipes métier, data et infrastructure pour assurer la continuité des livraisons
-        </li>
+    <ul class="impact-list">
+        <li><i class="fa-solid fa-circle"></i> Piloté la <strong>migration Calypso</strong> multi-environnement (7 environnements / 30+ serveurs) avec un temps d'arrêt minimal</li>
+        <li><i class="fa-solid fa-circle"></i> Réduit le temps de déploiement et éliminé les erreurs manuelles via l'<strong>automatisation CI/CD</strong></li>
+        <li><i class="fa-solid fa-circle"></i> Amélioré la visibilité en production avec <strong>Zabbix, ELK, Grafana, AppDynamics</strong></li>
+        <li><i class="fa-solid fa-circle"></i> Optimisé l'<strong>archivage Oracle</strong> pour les systèmes à haut volume</li>
+        <li><i class="fa-solid fa-circle"></i> Fait le lien entre les équipes métier, data et infrastructure pour assurer la continuité</li>
     </ul>
 </section>
 
-<!-- Expérience Professionnelle -->
-<section class="section">
+<section class="section" id="experience">
     <h2><i class="fa-solid fa-building"></i> Expérience Professionnelle</h2>
-
-    <div style="margin-top:1.5rem;">
-        <h3>DevOps / Ingénieur Système — Bank Leumi <span style="font-weight:400;color:var(--muted);font-size:0.9rem;">(2018–2026)</span></h3>
-        <ul style="margin-top:0.5rem;padding-left:1.3rem;">
-            <li>Administration sur plateformes Linux &amp; Oracle</li>
-            <li>Conception et mise en œuvre de pipelines CI/CD</li>
-            <li>Automatisation des déploiements et des flux opérationnels</li>
-            <li>Gestion d'environnements de production à grande échelle</li>
-            <li>Mise en place de solutions de monitoring et d'observabilité</li>
-        </ul>
-    </div>
-
-    <div style="margin-top:1.5rem;">
-        <h3>Chef de Projet / Administrateur Système — Bank Postale <span style="font-weight:400;color:var(--muted);font-size:0.9rem;">(2007–2017)</span></h3>
-        <ul style="margin-top:0.5rem;padding-left:1.3rem;">
-            <li>Pilotage de projets d'infrastructure et systèmes (Windows, Linux, VMware)</li>
-            <li>Conception de flux SQL pour le reporting et l'intégration</li>
-            <li>Garantie de la fiabilité, de la sécurité et de la performance des systèmes</li>
-        </ul>
-    </div>
-
-    <div style="margin-top:1.5rem;">
-        <h3>Chef de Projet &amp; Ingénieur Logiciel — ODDO <span style="font-weight:400;color:var(--muted);font-size:0.9rem;">(1996–2006)</span></h3>
-        <ul style="margin-top:0.5rem;padding-left:1.3rem;">
-            <li>Développement de systèmes Back/Middle Office (C#, SQL Server)</li>
-            <li>Gestion de l'architecture de données et des applications internes</li>
-        </ul>
+    <div class="exp-grid">
+        <div class="exp-item">
+            <h3>DevOps &amp; Ingénieur Système</h3>
+            <div class="date">Bank Leumi — 2018–2026</div>
+            <ul>
+                <li>Administration Linux &amp; Oracle</li>
+                <li>Conception et mise en œuvre de pipelines CI/CD</li>
+                <li>Automatisation des déploiements</li>
+                <li>Gestion d'environnements de production à grande échelle</li>
+                <li>Monitoring &amp; observabilité (Zabbix, ELK, Grafana)</li>
+            </ul>
+        </div>
+        <div class="exp-item">
+            <h3>Chef de Projet &amp; Admin Système</h3>
+            <div class="date">Bank Postale — 2007–2017</div>
+            <ul>
+                <li>Projets d'infrastructure (Windows, Linux, VMware)</li>
+                <li>Flux SQL pour reporting &amp; intégration</li>
+                <li>Fiabilité, sécurité et performance</li>
+            </ul>
+        </div>
+        <div class="exp-item">
+            <h3>CP &amp; Ingénieur Logiciel</h3>
+            <div class="date">ODDO — 1996–2006</div>
+            <ul>
+                <li>Systèmes Back/Middle Office (C#, SQL Server)</li>
+                <li>Architecture de données &amp; applications internes</li>
+            </ul>
+        </div>
     </div>
 </section>
 
-<!-- Compétences -->
-<section class="section">
+<section class="section" id="skills">
     <h2><i class="fa-solid fa-gears"></i> Compétences</h2>
-
-    <div style="margin-top:1rem;">
-        <h3><i class="fa-solid fa-code-branch"></i>&ensp;DevOps &amp; Outils</h3>
-        <div class="tags" style="margin-top:0.3rem;">
-            <span class="tag">Jenkins</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">CI/CD</span><span class="tag">Control-M</span><span class="tag">Harbor</span><span class="tag">ArgoCD</span><span class="tag">Rancher</span><span class="tag">Portainer</span><span class="tag">Gitea</span><span class="tag">MinIO</span><span class="tag">Headlamp</span><span class="tag">AWS</span><span class="tag">Traefik</span><span class="tag">Git</span><span class="tag">GitHub Actions</span><span class="tag">n8n</span>
+    <div class="skills-grid">
+        <div class="skill-group">
+            <h3><i class="fa-solid fa-code-branch"></i> DevOps &amp; Outils</h3>
+            <div class="tags">
+                <span class="tag">Jenkins</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">CI/CD</span><span class="tag">Harbor</span><span class="tag">ArgoCD</span><span class="tag">Rancher</span><span class="tag">Portainer</span><span class="tag">Gitea</span><span class="tag">MinIO</span><span class="tag">Headlamp</span><span class="tag">Traefik</span><span class="tag">AWS</span><span class="tag">Control-M</span><span class="tag">Git</span><span class="tag">GitHub Actions</span><span class="tag">n8n</span>
+            </div>
         </div>
-    </div>
-
-    <div style="margin-top:1.25rem;">
-        <h3><i class="fa-solid fa-eye"></i>&ensp;Monitoring</h3>
-        <div class="tags" style="margin-top:0.3rem;">
-            <span class="tag">Zabbix</span><span class="tag">ELK</span><span class="tag">Grafana</span><span class="tag">AppDynamics</span><span class="tag">Prometheus</span>
+        <div class="skill-group">
+            <h3><i class="fa-solid fa-eye"></i> Monitoring</h3>
+            <div class="tags">
+                <span class="tag">Zabbix</span><span class="tag">ELK</span><span class="tag">Grafana</span><span class="tag">AppDynamics</span><span class="tag">Prometheus</span>
+            </div>
+            <h3 style="margin-top:0.5rem;"><i class="fa-solid fa-server"></i> Systèmes</h3>
+            <div class="tags">
+                <span class="tag">Linux/Unix</span><span class="tag">Windows Server</span><span class="tag">VMware</span><span class="tag">Citrix</span>
+            </div>
         </div>
-    </div>
-
-    <div style="margin-top:1.25rem;">
-        <h3><i class="fa-solid fa-server"></i>&ensp;Systèmes</h3>
-        <div class="tags" style="margin-top:0.3rem;">
-            <span class="tag">Linux/Unix</span><span class="tag">Windows Server</span><span class="tag">VMware</span><span class="tag">Citrix</span>
-        </div>
-    </div>
-
-    <div style="margin-top:1.25rem;">
-        <h3><i class="fa-solid fa-database"></i>&ensp;Bases de données</h3>
-        <div class="tags" style="margin-top:0.3rem;">
-            <span class="tag">Oracle</span><span class="tag">SQL Server</span><span class="tag">SSIS</span>
-        </div>
-    </div>
-
-    <div style="margin-top:1.25rem;">
-        <h3><i class="fa-solid fa-code"></i>&ensp;Programmation</h3>
-        <div class="tags" style="margin-top:0.3rem;">
-            <span class="tag">Python</span><span class="tag">Java</span><span class="tag">C#</span><span class="tag">PowerShell</span><span class="tag">Bash</span>
+        <div class="skill-group">
+            <h3><i class="fa-solid fa-database"></i> Bases de données</h3>
+            <div class="tags">
+                <span class="tag">Oracle</span><span class="tag">SQL Server</span><span class="tag">SSIS</span>
+            </div>
+            <h3 style="margin-top:0.5rem;"><i class="fa-solid fa-code"></i> Programmation</h3>
+            <div class="tags">
+                <span class="tag">Python</span><span class="tag">Java</span><span class="tag">C#</span><span class="tag">PowerShell</span><span class="tag">Bash</span>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- IA & Automatisation -->
-<section class="section">
-    <h2><i class="fa-solid fa-robot"></i> IA &amp; Automatisation</h2>
-    <p>Intégration d'outils d'IA (LLMs) dans les flux opérationnels, automatisation des processus via <strong>n8n</strong> et APIs, et développement de solutions d'automatisation de données et de reporting.</p>
-</section>
+<div class="bottom-cols">
+    <section class="section" id="ai">
+        <h2><i class="fa-solid fa-robot"></i> IA &amp; Automatisation</h2>
+        <p style="font-size:0.82rem;">Intégration d'outils d'IA (LLMs) dans les flux opérationnels, automatisation des processus via <strong>n8n</strong> et APIs, développement de solutions de data et reporting.</p>
+    </section>
 
-<!-- Formation -->
-<section class="section">
-    <h2><i class="fa-solid fa-graduation-cap"></i> Formation</h2>
-    <div style="margin-top:0.5rem;">
-        <p><strong>B.Sc Informatique &amp; Robotique</strong> — Université Paris</p>
-        <p style="margin-top:0.4rem;color:var(--muted);font-size:0.9rem;">
-            Formations : DevOps, AWS, Python, Docker, Ansible
+    <section class="section" id="education">
+        <h2><i class="fa-solid fa-graduation-cap"></i> Formation</h2>
+        <p style="font-size:0.82rem;"><strong>B.Sc Informatique &amp; Robotique</strong> — Université Paris</p>
+        <p style="font-size:0.78rem;color:var(--muted);margin-top:0.25rem;">Formations : DevOps, AWS, Python, Docker, Ansible</p>
+    </section>
+</div>
+
+<div class="bottom-cols">
+    <section class="section" id="languages">
+        <h2><i class="fa-solid fa-language"></i> Langues</h2>
+        <div class="tags" style="margin-top:0.3rem;">
+            <span class="tag">🇫🇷 Français — Langue maternelle</span>
+            <span class="tag">🇮🇱 Hébreu — Courant</span>
+            <span class="tag">🇺🇸 Anglais — Professionnel</span>
+        </div>
+        <p style="font-size:0.75rem;color:var(--muted);margin-top:0.5rem;text-align:right;">
+            <a href="#contact" style="color:var(--brown);">Contactez-moi</a>
         </p>
-    </div>
-</section>
+    </section>
 
-<!-- Langues -->
-<section class="section">
-    <h2><i class="fa-solid fa-language"></i> Langues</h2>
-    <div class="tags" style="margin-top:0.5rem;">
-        <span class="tag">🇫🇷 Français — Langue maternelle</span>
-        <span class="tag">🇮🇱 Hébreu — Courant</span>
-        <span class="tag">🇺🇸 Anglais — Professionnel</span>
-    </div>
-</section>
+    <section class="section" id="contact">
+        <h2><i class="fa-solid fa-envelope"></i> Contact</h2>
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off">
+            <input type="text" name="name" placeholder="Nom" required>
+            <input type="email" name="_replyto" placeholder="Email" required>
+            <textarea name="message" placeholder="Message" required></textarea>
+            <button type="submit" class="btn-submit"><i class="fa-solid fa-paper-plane"></i> Envoyer</button>
+        </form>
+        <p class="form-success">Merci ! Votre message a été envoyé.</p>
+    </section>
+</div>

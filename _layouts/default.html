@@ -1,7 +1,6 @@
 <!---
   Layout: default — Gabriel Cohen
-  Design: Beige background, Inter font, dark gray text, Font Awesome icons
-  Full-width layout
+  Design: Dark brown sidebar + beige content, Inter font, Font Awesome icons
   RTL support for Hebrew
 --->
 {% assign lang_code = page.lang | default: 'en' %}
@@ -14,7 +13,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ page.description | default: site.description }}">
     <title>{{ page.title | default: site.title }}</title>
-
     <meta property="og:title" content="{{ page.title | default: site.title }}">
     <meta property="og:description" content="{{ page.description | default: site.description }}">
     <meta property="og:type" content="website">
@@ -22,301 +20,536 @@
 
     <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <style>
         :root {
+            --brown: #4a3020;
+            --brown-light: #5c3d2e;
+            --brown-dark: #3a2518;
             --bg: #f5f0e6;
             --card: #ffffff;
             --text: #3d3d3d;
             --muted: #7a756e;
-            --accent: #4a7c8c;
-            --accent-hover: #3a6675;
+            --heading: #2d2d2d;
             --border: #e5dfd5;
-            --header-bg: #ffffff;
-            --radius: 10px;
+            --accent: #4a3020;
+            --sidebar-w: 235px;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        html, body {
-            height: 100%;
-        }
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             background: var(--bg);
             color: var(--text);
-            line-height: 1.7;
+            line-height: 1.6;
             font-weight: 400;
-            font-size: 15px;
+            font-size: 14.5px;
             display: flex;
-            flex-direction: column;
+            min-height: 100vh;
         }
 
-        /* ── Header ── */
-        .site-header {
-            background: var(--header-bg);
-            border-bottom: 1px solid var(--border);
-            padding: 1rem 2.5rem;
+        /* ── Sidebar ── */
+        .sidebar {
+            width: var(--sidebar-w);
+            min-width: var(--sidebar-w);
+            background: var(--brown);
+            color: #e8ddd3;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
+            flex-direction: column;
+            position: fixed;
             top: 0;
+            left: 0;
+            height: 100vh;
             z-index: 100;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
-            flex-shrink: 0;
+            overflow-y: auto;
         }
 
-        .header-left {
+        .sidebar-brand {
             display: flex;
-            flex-direction: column;
-        }
-
-        .header-name {
-            font-size: 1.15rem;
-            font-weight: 700;
-            color: var(--text);
-            letter-spacing: -0.01em;
-        }
-
-        .header-title {
-            font-size: 0.82rem;
-            color: var(--muted);
-            font-weight: 500;
-            letter-spacing: 0.02em;
-        }
-
-        .header-contact {
-            font-size: 0.8rem;
-            color: var(--muted);
-            font-weight: 400;
-            margin-top: 0.15rem;
-        }
-
-        .header-contact a {
-            color: var(--accent);
+            align-items: center;
+            gap: 0.55rem;
+            padding: 1.25rem 1.1rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
             text-decoration: none;
         }
 
-        .header-contact a:hover {
-            text-decoration: underline;
+        .sidebar-brand img {
+            width: 36px;
+            height: 36px;
+            border-radius: 6px;
         }
 
-        .header-right {
+        .sidebar-brand .name {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: -0.01em;
+            line-height: 1.2;
+        }
+
+        .sidebar-brand .role {
+            font-size: 0.68rem;
+            color: #c4afa0;
+            font-weight: 500;
+        }
+
+        .sidebar-brand .loc {
+            font-size: 0.64rem;
+            color: #a89484;
+            font-weight: 400;
+            margin-top: 0.1rem;
+        }
+
+        /* Sidebar nav */
+        .sidebar-nav {
+            flex: 1;
+            padding: 0.75rem 0;
+        }
+
+        .sidebar-nav a {
             display: flex;
-            gap: 0.5rem;
             align-items: center;
+            gap: 0.6rem;
+            padding: 0.5rem 1.1rem;
+            color: #c4afa0;
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 500;
+            transition: all 0.15s;
+            border-left: 3px solid transparent;
         }
 
-        .lang-flag {
-            width: 38px;
-            height: 38px;
+        .sidebar-nav a:hover,
+        .sidebar-nav a.active {
+            color: #fff;
+            background: rgba(255,255,255,0.08);
+            border-left-color: #c4afa0;
+        }
+
+        .sidebar-nav a i { width: 1.1em; text-align: center; font-size: 0.85rem; }
+
+        /* Sidebar bottom */
+        .sidebar-bottom {
+            padding: 0.75rem 0.9rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        .btn-pdf {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+            background: rgba(255,255,255,0.1);
+            color: #fff;
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 0.45rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.75rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-pdf:hover {
+            background: rgba(255,255,255,0.18);
+            border-color: rgba(255,255,255,0.35);
+        }
+
+        /* Language flags in sidebar */
+        .sidebar-langs {
+            display: flex;
+            gap: 0.3rem;
+            justify-content: center;
+        }
+
+        .sidebar-langs a {
+            width: 32px;
+            height: 32px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.15rem;
+            font-size: 0.95rem;
             text-decoration: none;
             border: 2px solid transparent;
             transition: all 0.2s;
-            background: var(--bg);
-            cursor: pointer;
+            background: rgba(255,255,255,0.08);
         }
 
-        .lang-flag:hover {
-            border-color: var(--accent);
-            background: #eef4f6;
-            transform: scale(1.08);
+        .sidebar-langs a:hover {
+            border-color: rgba(255,255,255,0.4);
+            background: rgba(255,255,255,0.15);
         }
 
-        .lang-flag.active {
-            border-color: var(--accent);
-            background: #e0edf2;
-            box-shadow: 0 0 0 3px rgba(74,124,140,0.15);
+        .sidebar-langs a.active {
+            border-color: #fff;
+            background: rgba(255,255,255,0.2);
         }
 
-        /* ── Main ── */
-        main {
+        /* ── Main content ── */
+        .main {
+            margin-left: var(--sidebar-w);
             flex: 1;
-            width: 100%;
-            padding: 2.5rem 2.5rem 3rem;
+            padding: 1.5rem 2rem 2rem;
+            max-width: calc(100% - var(--sidebar-w));
         }
 
         .section {
             background: var(--card);
             border: 1px solid var(--border);
-            border-radius: var(--radius);
-            padding: 2.5rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
-            width: 100%;
+            border-radius: 9px;
+            padding: 1.3rem 1.6rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+            scroll-margin-top: 1rem;
         }
 
         .section h2 {
-            color: var(--text);
-            margin-bottom: 1rem;
-            font-size: 1.35rem;
-            font-weight: 600;
+            color: var(--brown);
+            font-size: 1.05rem;
+            font-weight: 700;
             display: flex;
             align-items: center;
-            gap: 0.6rem;
-            padding-bottom: 0.75rem;
-            border-bottom: 2px solid var(--border);
+            gap: 0.5rem;
+            margin-bottom: 0.6rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1.5px solid var(--border);
         }
 
         .section h2 i {
-            color: var(--accent);
-            width: 1.3em;
-            text-align: center;
+            color: var(--brown);
+            width: 1.2em;
+            opacity: 0.8;
+            font-size: 0.9rem;
         }
 
         .section h3 {
-            font-size: 1.05rem;
+            font-size: 0.9rem;
             font-weight: 600;
-            color: var(--text);
-            margin-bottom: 0.4rem;
+            color: var(--heading);
+            margin-bottom: 0.2rem;
         }
 
-        /* Tags / Skills */
+        /* Hero */
+        .hero {
+            text-align: left;
+            background: transparent;
+            border: none;
+            box-shadow: none;
+            padding: 0.5rem 0.25rem 0.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero h2 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--brown);
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .hero .sub {
+            color: var(--muted);
+            font-size: 0.85rem;
+            margin-top: 0.2rem;
+        }
+
+        /* Tags */
         .tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.4rem;
+            gap: 0.3rem;
         }
 
         .tag {
             display: inline-block;
-            background: #eef4f6;
-            color: #3a6c7c;
-            padding: 0.3rem 0.85rem;
-            border-radius: 6px;
-            font-size: 0.84rem;
+            background: #f0ebe0;
+            color: #4a3020;
+            padding: 0.18rem 0.55rem;
+            border-radius: 4px;
+            font-size: 0.73rem;
             font-weight: 500;
-            letter-spacing: 0.01em;
         }
 
-        /* Buttons */
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: var(--accent);
-            color: #fff;
-            padding: 0.6rem 1.5rem;
-            border-radius: 7px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: background 0.2s, transform 0.15s;
-            border: none;
-            cursor: pointer;
+        /* Impact list */
+        .impact-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.3rem 1rem;
         }
 
-        .btn:hover {
-            background: var(--accent-hover);
-            transform: translateY(-1px);
-        }
-
-        .btn-outline {
-            background: transparent;
-            color: var(--accent);
-            border: 1.5px solid var(--accent);
-        }
-
-        .btn-outline:hover {
-            background: #eef4f6;
-        }
-
-        .btn-group {
+        .impact-list li {
+            padding: 0.35rem 0;
+            font-size: 0.82rem;
             display: flex;
+            align-items: flex-start;
+            gap: 0.4rem;
+        }
+
+        .impact-list li i {
+            color: var(--brown);
+            margin-top: 0.15rem;
+            flex-shrink: 0;
+            font-size: 0.65rem;
+        }
+
+        /* Experience grid */
+        .exp-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
             gap: 0.75rem;
-            flex-wrap: wrap;
-            margin-top: 1rem;
+        }
+
+        .exp-item h3 {
+            font-size: 0.82rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .exp-item .date {
+            font-size: 0.7rem;
+            color: var(--muted);
+            font-weight: 400;
+            margin-bottom: 0.35rem;
+        }
+
+        .exp-item ul {
+            font-size: 0.75rem;
+            padding-left: 1.1rem;
+            color: var(--text);
+        }
+
+        .exp-item ul li {
+            margin-bottom: 0.15rem;
+        }
+
+        /* Skills grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 0.5rem 1rem;
+        }
+
+        .skill-group h3 {
+            font-size: 0.76rem;
+            margin-bottom: 0.25rem;
+            color: var(--brown);
+        }
+
+        .skill-group .tags {
+            gap: 0.2rem;
+        }
+
+        .skill-group .tag {
+            font-size: 0.7rem;
+            padding: 0.12rem 0.45rem;
+        }
+
+        /* Two-column for bottom sections */
+        .bottom-cols {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+        }
+
+        /* Contact form */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 0.45rem 0.6rem;
+            border: 1px solid var(--border);
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 0.8rem;
+            background: #fafaf7;
+            color: var(--text);
+            transition: border-color 0.2s;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: var(--brown);
+            box-shadow: 0 0 0 2px rgba(74,48,32,0.08);
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 70px;
+        }
+
+        .contact-form .honey {
+            position: absolute;
+            left: -9999px;
+            opacity: 0;
+        }
+
+        .btn-submit {
+            background: var(--brown);
+            color: #fff;
+            border: none;
+            padding: 0.45rem 1.2rem;
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+            align-self: flex-start;
+        }
+
+        .btn-submit:hover {
+            background: var(--brown-dark);
+        }
+
+        .form-success {
+            display: none;
+            color: #2d6a4f;
+            font-weight: 500;
+            font-size: 0.85rem;
         }
 
         /* Footer */
         footer {
             text-align: center;
-            padding: 1.5rem 2.5rem 2rem;
+            padding: 0.5rem;
             color: var(--muted);
-            font-size: 0.82rem;
-            border-top: 1px solid var(--border);
-            flex-shrink: 0;
+            font-size: 0.7rem;
         }
 
-        footer a { color: var(--accent); text-decoration: none; font-weight: 500; }
-        footer a:hover { text-decoration: underline; }
+        footer a { color: var(--brown); text-decoration: none; }
         footer .fa-heart { color: #c46767; }
 
-        /* RTL overrides */
-        [dir="rtl"] body {
-            direction: rtl;
-            text-align: right;
+        /* Print */
+        @media print {
+            body { background: #fff; }
+            .sidebar { display: none; }
+            .main { margin-left: 0; max-width: 100%; padding: 0; }
+            .section { box-shadow: none; border: none; break-inside: avoid; padding: 0.5rem 0; }
+            .btn-submit, .btn-pdf { display: none; }
+            .contact-form input, .contact-form textarea { border: none; background: none; }
         }
 
-        [dir="rtl"] .site-header { direction: rtl; }
-        [dir="rtl"] .header-right { direction: ltr; }
+        /* RTL */
+        [dir="rtl"] body { direction: rtl; }
+        [dir="rtl"] .sidebar {
+            left: auto;
+            right: 0;
+        }
+        [dir="rtl"] .sidebar-nav a {
+            border-left: none;
+            border-right: 3px solid transparent;
+        }
+        [dir="rtl"] .sidebar-nav a:hover,
+        [dir="rtl"] .sidebar-nav a.active {
+            border-right-color: #c4afa0;
+        }
+        [dir="rtl"] .main {
+            margin-left: 0;
+            margin-right: var(--sidebar-w);
+        }
+        [dir="rtl"] .contact-form .honey {
+            left: auto;
+            right: -9999px;
+        }
 
         @media (max-width: 768px) {
-            .site-header {
-                padding: 0.85rem 1.25rem;
-                flex-direction: column;
-                gap: 0.6rem;
-                text-align: center;
+            .sidebar {
+                width: 100%;
+                min-width: 100%;
+                height: auto;
+                position: relative;
+                flex-direction: row;
+                flex-wrap: wrap;
+                padding: 0.5rem;
+                justify-content: space-between;
+                align-items: center;
+                gap: 0.3rem;
             }
-
-            .header-name { font-size: 1rem; }
-
-            main { padding: 1.5rem 1rem 2rem; }
-
-            .section { padding: 1.5rem; }
+            .sidebar-brand { border: none; padding: 0.3rem; }
+            .sidebar-nav { display: none; }
+            .sidebar-bottom {
+                flex-direction: row;
+                border: none;
+                padding: 0;
+                gap: 0.3rem;
+            }
+            .main {
+                margin-left: 0;
+                max-width: 100%;
+                padding: 0.75rem;
+            }
+            [dir="rtl"] .main { margin-right: 0; }
+            .exp-grid, .skills-grid, .impact-list, .bottom-cols {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
 
-    <header class="site-header">
-        <!-- Logo + Name -->
-        <div style="display:flex;align-items:center;gap:0.75rem;">
-            <a href="{{ site.baseurl }}/" style="display:flex;align-items:center;text-decoration:none;">
-                <img src="{{ site.baseurl }}/assets/logo.svg" alt="GC" width="42" height="42" style="display:block;">
-            </a>
-            <div class="header-left">
-                <span class="header-name">Gabriel Cohen</span>
-                <span class="header-contact">Petah Tikva, Israel &bull; <a href="mailto:cohen.gabriel@gmail.com">cohen.gabriel@gmail.com</a></span>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <a href="{{ site.baseurl }}/" class="sidebar-brand">
+            <img src="{{ site.baseurl }}/assets/logo.svg" alt="GC" width="36" height="36">
+            <div>
+                <div class="name">Gabriel Cohen</div>
+                <div class="role">Tech Lead &amp; Architect</div>
+                <div class="loc">Petah Tikva, Isr &bull; <a href="#contact" style="color:#c4afa0;text-decoration:none;">Contact me</a></div>
+            </div>
+        </a>
+
+        <nav class="sidebar-nav">
+            <a href="#summary"><i class="fa-solid fa-user"></i> {{ site.data.i18n[lang_code].nav_summary | default: 'Summary' }}</a>
+            <a href="#impact"><i class="fa-solid fa-chart-line"></i> {{ site.data.i18n[lang_code].nav_impact | default: 'Impact' }}</a>
+            <a href="#experience"><i class="fa-solid fa-building"></i> {{ site.data.i18n[lang_code].nav_exp | default: 'Experience' }}</a>
+            <a href="#skills"><i class="fa-solid fa-gears"></i> {{ site.data.i18n[lang_code].nav_skills | default: 'Skills' }}</a>
+            <a href="#ai"><i class="fa-solid fa-robot"></i> {{ site.data.i18n[lang_code].nav_ai | default: 'AI & Automation' }}</a>
+            <a href="#education"><i class="fa-solid fa-graduation-cap"></i> {{ site.data.i18n[lang_code].nav_edu | default: 'Education' }}</a>
+            <a href="#languages"><i class="fa-solid fa-language"></i> {{ site.data.i18n[lang_code].nav_lang | default: 'Languages' }}</a>
+            <a href="#contact"><i class="fa-solid fa-envelope"></i> {{ site.data.i18n[lang_code].nav_contact | default: 'Contact' }}</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <button class="btn-pdf" onclick="window.print()" title="{{ site.data.i18n[lang_code].download_pdf | default: 'Download PDF' }}">
+                <i class="fa-solid fa-download"></i> PDF
+            </button>
+            <div class="sidebar-langs">
+                {% for lang in site.data.languages %}
+                    {% assign l = lang[1] %}
+                    <a href="{{ site.baseurl }}/{{ l.code }}/"
+                       class="{% if l.code == lang_code %}active{% endif %}"
+                       title="{{ l.name }}">{{ l.flag }}</a>
+                {% endfor %}
             </div>
         </div>
-        <div class="header-right">
-            {% for lang in site.data.languages %}
-                {% assign l = lang[1] %}
-                <a href="{{ site.baseurl }}/{{ l.code }}/"
-                   class="lang-flag{% if l.code == lang_code %} active{% endif %}"
-                   title="{{ l.name }}"
-                   aria-label="{{ l.name }}">
-                    {{ l.flag }}
-                </a>
-            {% endfor %}
-        </div>
-    </header>
+    </aside>
 
-    <main>
+    <!-- Main Content -->
+    <main class="main">
         {{ content }}
-    </main>
-
-    <footer>
-        <p>
+        <footer>
             &copy; {{ 'now' | date: "%Y" }} Gabriel Cohen &mdash;
-            {{ site.data.i18n[lang_code].powered_by | default: "Built with" }}
-            <i class="fa-brands fa-github"></i> <a href="https://github.com/gcoh/gcoh.github.io" target="_blank" rel="noopener">GitHub</a>
-            &amp; <i class="fa-solid fa-heart"></i>
-        </p>
-    </footer>
+            {{ site.data.i18n[lang_code].powered_by | default: 'Built with' }}
+            <i class="fa-solid fa-heart"></i>
+        </footer>
+    </main>
 
 </body>
 </html>

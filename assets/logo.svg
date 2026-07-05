@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
-  <!-- G block: blue letter on white background -->
-  <rect x="0" y="0" width="42" height="80" rx="6" fill="#ffffff" />
-  <text x="21" y="54" font-family="'Inter', 'Segoe UI', sans-serif" font-size="44" font-weight="700"
-        fill="#2563eb" text-anchor="middle">G</text>
+  <!-- G block: dark brown letter on white/transparent background -->
+  <rect x="0" y="0" width="42" height="80" rx="7" fill="#ffffff" />
+  <text x="21" y="55" font-family="'Inter', 'Segoe UI', sans-serif" font-size="46" font-weight="700"
+        fill="#4a3020" text-anchor="middle">G</text>
 
-  <!-- C block: white letter on blue background -->
-  <rect x="38" y="0" width="42" height="80" rx="6" fill="#2563eb" />
-  <text x="59" y="54" font-family="'Inter', 'Segoe UI', sans-serif" font-size="44" font-weight="700"
+  <!-- C block: white letter on dark brown background -->
+  <rect x="38" y="0" width="42" height="80" rx="7" fill="#4a3020" />
+  <text x="59" y="55" font-family="'Inter', 'Segoe UI', sans-serif" font-size="46" font-weight="700"
         fill="#ffffff" text-anchor="middle">C</text>
 </svg>

@@ -5,143 +5,128 @@ title: "גבריאל כהן — מוביל טכנולוגי / ארכיטקט"
 description: "גבריאל כהן — 20+ שנות ניסיון במערכות פיננסיות, Calypso, DevOps ופלטפורמות נתונים"
 ---
 
-<!-- Hero -->
-<section class="section" style="text-align:center;border:none;box-shadow:none;background:transparent;padding-bottom:1rem;">
-    <h2 style="border:none;justify-content:center;font-size:1.5rem;font-weight:600;">
-        מוביל טכנולוגי / ארכיטקט – מערכות פיננסיות ופלטפורמות דאטה
-    </h2>
-    <p style="color:var(--muted);font-size:1rem;">Calypso &bull; CI/CD &bull; Cloud &bull; אוטומציה</p>
+<section class="hero section">
+    <h2>מוביל טכנולוגי / ארכיטקט – מערכות פיננסיות ופלטפורמות דאטה</h2>
+    <p class="sub">למעלה מ-20 שנות ניסיון בסביבות קריטיות בהיקף רחב</p>
 </section>
 
-<!-- תקציר מקצועי -->
-<section class="section">
+<section class="section" id="summary">
     <h2><i class="fa-solid fa-user-tie"></i> תקציר מקצועי</h2>
-    <p>מומחה בכיר במערכות פיננסיות עם <strong>למעלה מ-20 שנות ניסיון</strong> באספקה ותפעול של סביבות קריטיות בהיקף רחב. מתמחה ב-<strong>Calypso (Nasdaq)</strong>, CI/CD ופלטפורמות נתונים. יכולת מוכחת לגשר בין עסקים לטכנולוגיה, להוביל הגירות מורכבות ולהטמיע אוטומציה שמשפרת אמינות ומפחיתה עלויות תפעול.</p>
+    <p>מומחה בכיר במערכות פיננסיות, מתמחה ב-<strong>Calypso (Nasdaq)</strong>, CI/CD ופלטפורמות נתונים. יכולת מוכחת לגשר בין עסקים לטכנולוגיה, להוביל הגירות מורכבות ולהטמיע אוטומציה לשיפור אמינות והפחתת עלויות.</p>
 </section>
 
-<!-- השפעה מרכזית -->
-<section class="section">
+<section class="section" id="impact">
     <h2><i class="fa-solid fa-chart-line"></i> השפעה מרכזית</h2>
-    <ul style="list-style:none;padding:0;">
-        <li style="padding:0.5rem 0;border-bottom:1px solid var(--border);">
-            <i class="fa-solid fa-check" style="color:var(--accent);margin-left:0.6rem;"></i>
-            הובלת <strong>הגירת Calypso</strong> רב-סביבתית (7 סביבות / 30+ שרתים) עם זמן השבתה מינימלי
-        </li>
-        <li style="padding:0.5rem 0;border-bottom:1px solid var(--border);">
-            <i class="fa-solid fa-check" style="color:var(--accent);margin-left:0.6rem;"></i>
-            צמצום זמן הפריסה וביטול שגיאות ידניות באמצעות <strong>אוטומציית CI/CD</strong>
-        </li>
-        <li style="padding:0.5rem 0;border-bottom:1px solid var(--border);">
-            <i class="fa-solid fa-check" style="color:var(--accent);margin-left:0.6rem;"></i>
-            שיפור הנראות בסביבת הייצור עם מערך ניטור (<strong>Zabbix, ELK, Grafana, AppDynamics</strong>)
-        </li>
-        <li style="padding:0.5rem 0;border-bottom:1px solid var(--border);">
-            <i class="fa-solid fa-check" style="color:var(--accent);margin-left:0.6rem;"></i>
-            אופטימיזציה של <strong>ארכוב Oracle</strong> עבור מערכות בנפח גבוה
-        </li>
-        <li style="padding:0.5rem 0;">
-            <i class="fa-solid fa-check" style="color:var(--accent);margin-left:0.6rem;"></i>
-            גישור בין צוותי עסקים, דאטה ותשתיות להבטחת רציפות תפעולית
-        </li>
+    <ul class="impact-list">
+        <li><i class="fa-solid fa-circle"></i> הובלת <strong>הגירת Calypso</strong> רב-סביבתית (7 סביבות / 30+ שרתים) עם זמן השבתה מינימלי</li>
+        <li><i class="fa-solid fa-circle"></i> צמצום זמן פריסה וביטול שגיאות ידניות באמצעות <strong>אוטומציית CI/CD</strong></li>
+        <li><i class="fa-solid fa-circle"></i> שיפור נראות בייצור עם <strong>Zabbix, ELK, Grafana, AppDynamics</strong></li>
+        <li><i class="fa-solid fa-circle"></i> אופטימיזציה של <strong>ארכוב Oracle</strong> עבור מערכות בנפח גבוה</li>
+        <li><i class="fa-solid fa-circle"></i> גישור בין צוותי עסקים, דאטה ותשתיות להבטחת רציפות</li>
     </ul>
 </section>
 
-<!-- ניסיון מקצועי -->
-<section class="section">
+<section class="section" id="experience">
     <h2><i class="fa-solid fa-building"></i> ניסיון מקצועי</h2>
-
-    <div style="margin-top:1.5rem;">
-        <h3>DevOps / מהנדס מערכת — בנק לאומי <span style="font-weight:400;color:var(--muted);font-size:0.9rem;">(2018–2026)</span></h3>
-        <ul style="margin-top:0.5rem;padding-right:1.3rem;">
-            <li>ניהול פלטפורמות Linux ו-Oracle</li>
-            <li>תכנון והטמעה של צינורות CI/CD</li>
-            <li>אוטומציה של פריסות ותהליכים תפעוליים</li>
-            <li>ניהול סביבות ייצור בהיקף רחב</li>
-            <li>הטמעת פתרונות ניטור ובקרה</li>
-        </ul>
-    </div>
-
-    <div style="margin-top:1.5rem;">
-        <h3>מנהל פרויקטים / מנהל מערכת — Bank Postale <span style="font-weight:400;color:var(--muted);font-size:0.9rem;">(2007–2017)</span></h3>
-        <ul style="margin-top:0.5rem;padding-right:1.3rem;">
-            <li>הובלת פרויקטי תשתית ומערכות (Windows, Linux, VMware)</li>
-            <li>תכנון תהליכי SQL לדיווח ואינטגרציה</li>
-            <li>הבטחת אמינות, אבטחה וביצועי מערכות</li>
-        </ul>
-    </div>
-
-    <div style="margin-top:1.5rem;">
-        <h3>מנהל פרויקטים ומהנדס תוכנה — ODDO <span style="font-weight:400;color:var(--muted);font-size:0.9rem;">(1996–2006)</span></h3>
-        <ul style="margin-top:0.5rem;padding-right:1.3rem;">
-            <li>פיתוח מערכות Back/Middle Office (C#, SQL Server)</li>
-            <li>ניהול ארכיטקטורת נתונים ויישומים פנימיים</li>
-        </ul>
+    <div class="exp-grid">
+        <div class="exp-item">
+            <h3>DevOps &amp; מהנדס מערכת</h3>
+            <div class="date">בנק לאומי — 2018–2026</div>
+            <ul>
+                <li>ניהול פלטפורמות Linux ו-Oracle</li>
+                <li>תכנון והטמעת צינורות CI/CD</li>
+                <li>אוטומציה של פריסות ותהליכים</li>
+                <li>ניהול סביבות ייצור בהיקף רחב</li>
+                <li>ניטור ובקרה (Zabbix, ELK, Grafana)</li>
+            </ul>
+        </div>
+        <div class="exp-item">
+            <h3>מנהל פרויקטים &amp; מנהל מערכת</h3>
+            <div class="date">Bank Postale — 2007–2017</div>
+            <ul>
+                <li>פרויקטי תשתית (Windows, Linux, VMware)</li>
+                <li>תהליכי SQL לדיווח ואינטגרציה</li>
+                <li>אמינות, אבטחה וביצועי מערכות</li>
+            </ul>
+        </div>
+        <div class="exp-item">
+            <h3>מנהל פרויקטים &amp; מהנדס תוכנה</h3>
+            <div class="date">ODDO — 1996–2006</div>
+            <ul>
+                <li>מערכות Back/Middle Office (C#, SQL Server)</li>
+                <li>ארכיטקטורת נתונים ויישומים פנימיים</li>
+            </ul>
+        </div>
     </div>
 </section>
 
-<!-- מיומנויות -->
-<section class="section">
+<section class="section" id="skills">
     <h2><i class="fa-solid fa-gears"></i> מיומנויות</h2>
-
-    <div style="margin-top:1rem;">
-        <h3><i class="fa-solid fa-code-branch"></i>&ensp;DevOps וכלים</h3>
-        <div class="tags" style="margin-top:0.3rem;">
-            <span class="tag">Jenkins</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">CI/CD</span><span class="tag">Control-M</span><span class="tag">Harbor</span><span class="tag">ArgoCD</span><span class="tag">Rancher</span><span class="tag">Portainer</span><span class="tag">Gitea</span><span class="tag">MinIO</span><span class="tag">Headlamp</span><span class="tag">AWS</span><span class="tag">Traefik</span><span class="tag">Git</span><span class="tag">GitHub Actions</span><span class="tag">n8n</span>
+    <div class="skills-grid">
+        <div class="skill-group">
+            <h3><i class="fa-solid fa-code-branch"></i> DevOps וכלים</h3>
+            <div class="tags">
+                <span class="tag">Jenkins</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">CI/CD</span><span class="tag">Harbor</span><span class="tag">ArgoCD</span><span class="tag">Rancher</span><span class="tag">Portainer</span><span class="tag">Gitea</span><span class="tag">MinIO</span><span class="tag">Headlamp</span><span class="tag">Traefik</span><span class="tag">AWS</span><span class="tag">Control-M</span><span class="tag">Git</span><span class="tag">GitHub Actions</span><span class="tag">n8n</span>
+            </div>
         </div>
-    </div>
-
-    <div style="margin-top:1.25rem;">
-        <h3><i class="fa-solid fa-eye"></i>&ensp;ניטור</h3>
-        <div class="tags" style="margin-top:0.3rem;">
-            <span class="tag">Zabbix</span><span class="tag">ELK</span><span class="tag">Grafana</span><span class="tag">AppDynamics</span><span class="tag">Prometheus</span>
+        <div class="skill-group">
+            <h3><i class="fa-solid fa-eye"></i> ניטור</h3>
+            <div class="tags">
+                <span class="tag">Zabbix</span><span class="tag">ELK</span><span class="tag">Grafana</span><span class="tag">AppDynamics</span><span class="tag">Prometheus</span>
+            </div>
+            <h3 style="margin-top:0.5rem;"><i class="fa-solid fa-server"></i> מערכות</h3>
+            <div class="tags">
+                <span class="tag">Linux/Unix</span><span class="tag">Windows Server</span><span class="tag">VMware</span><span class="tag">Citrix</span>
+            </div>
         </div>
-    </div>
-
-    <div style="margin-top:1.25rem;">
-        <h3><i class="fa-solid fa-server"></i>&ensp;מערכות</h3>
-        <div class="tags" style="margin-top:0.3rem;">
-            <span class="tag">Linux/Unix</span><span class="tag">Windows Server</span><span class="tag">VMware</span><span class="tag">Citrix</span>
-        </div>
-    </div>
-
-    <div style="margin-top:1.25rem;">
-        <h3><i class="fa-solid fa-database"></i>&ensp;בסיסי נתונים</h3>
-        <div class="tags" style="margin-top:0.3rem;">
-            <span class="tag">Oracle</span><span class="tag">SQL Server</span><span class="tag">SSIS</span>
-        </div>
-    </div>
-
-    <div style="margin-top:1.25rem;">
-        <h3><i class="fa-solid fa-code"></i>&ensp;תכנות</h3>
-        <div class="tags" style="margin-top:0.3rem;">
-            <span class="tag">Python</span><span class="tag">Java</span><span class="tag">C#</span><span class="tag">PowerShell</span><span class="tag">Bash</span>
+        <div class="skill-group">
+            <h3><i class="fa-solid fa-database"></i> בסיסי נתונים</h3>
+            <div class="tags">
+                <span class="tag">Oracle</span><span class="tag">SQL Server</span><span class="tag">SSIS</span>
+            </div>
+            <h3 style="margin-top:0.5rem;"><i class="fa-solid fa-code"></i> תכנות</h3>
+            <div class="tags">
+                <span class="tag">Python</span><span class="tag">Java</span><span class="tag">C#</span><span class="tag">PowerShell</span><span class="tag">Bash</span>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- AI ואוטומציה -->
-<section class="section">
-    <h2><i class="fa-solid fa-robot"></i> AI ואוטומציה</h2>
-    <p>שילוב כלי AI (LLMs) בתהליכים תפעוליים, אוטומציה של תהליכים באמצעות <strong>n8n</strong> ו-APIs, ופיתוח פתרונות אוטומציה של נתונים ודיווח.</p>
-</section>
+<div class="bottom-cols">
+    <section class="section" id="ai">
+        <h2><i class="fa-solid fa-robot"></i> AI ואוטומציה</h2>
+        <p style="font-size:0.82rem;">שילוב כלי AI (LLMs) בתהליכים תפעוליים, אוטומציה של תהליכים באמצעות <strong>n8n</strong> ו-APIs, פיתוח פתרונות אוטומציה של נתונים ודיווח.</p>
+    </section>
 
-<!-- השכלה -->
-<section class="section">
-    <h2><i class="fa-solid fa-graduation-cap"></i> השכלה</h2>
-    <div style="margin-top:0.5rem;">
-        <p><strong>B.Sc מדעי המחשב ורובוטיקה</strong> — אוניברסיטת פריז</p>
-        <p style="margin-top:0.4rem;color:var(--muted);font-size:0.9rem;">
-            הכשרות: DevOps, AWS, Python, Docker, Ansible
+    <section class="section" id="education">
+        <h2><i class="fa-solid fa-graduation-cap"></i> השכלה</h2>
+        <p style="font-size:0.82rem;"><strong>B.Sc מדעי המחשב ורובוטיקה</strong> — אוניברסיטת פריז</p>
+        <p style="font-size:0.78rem;color:var(--muted);margin-top:0.25rem;">הכשרות: DevOps, AWS, Python, Docker, Ansible</p>
+    </section>
+</div>
+
+<div class="bottom-cols">
+    <section class="section" id="languages">
+        <h2><i class="fa-solid fa-language"></i> שפות</h2>
+        <div class="tags" style="margin-top:0.3rem;">
+            <span class="tag">🇫🇷 צרפתית — שפת אם</span>
+            <span class="tag">🇮🇱 עברית — שוטף</span>
+            <span class="tag">🇺🇸 אנגלית — מקצועית</span>
+        </div>
+        <p style="font-size:0.75rem;color:var(--muted);margin-top:0.5rem;text-align:left;">
+            <a href="#contact" style="color:var(--brown);">צור קשר</a>
         </p>
-    </div>
-</section>
+    </section>
 
-<!-- שפות -->
-<section class="section">
-    <h2><i class="fa-solid fa-language"></i> שפות</h2>
-    <div class="tags" style="margin-top:0.5rem;">
-        <span class="tag">🇫🇷 צרפתית — שפת אם</span>
-        <span class="tag">🇮🇱 עברית — שוטף</span>
-        <span class="tag">🇺🇸 אנגלית — מקצועית</span>
-    </div>
-</section>
+    <section class="section" id="contact">
+        <h2><i class="fa-solid fa-envelope"></i> צור קשר</h2>
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off">
+            <input type="text" name="name" placeholder="שם" required>
+            <input type="email" name="_replyto" placeholder="אימייל" required>
+            <textarea name="message" placeholder="הודעה" required></textarea>
+            <button type="submit" class="btn-submit"><i class="fa-solid fa-paper-plane"></i> שלח</button>
+        </form>
+        <p class="form-success">תודה! ההודעה נשלחה.</p>
+    </section>
+</div>

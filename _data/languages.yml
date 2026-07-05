@@ -1,0 +1,20 @@
+# Language metadata
+# Used by layouts to build the language switcher
+
+en:
+  code: en
+  name: English
+  dir: ltr
+  flag: 🇬🇧
+
+fr:
+  code: fr
+  name: Français
+  dir: ltr
+  flag: 🇫🇷
+
+he:
+  code: he
+  name: עברית
+  dir: rtl
+  flag: 🇮🇱

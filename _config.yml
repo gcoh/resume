@@ -1,21 +1,27 @@
 # Site settings
 title: "Gabriel - CV & Portfolio"
-description: "Mon site personnel, CV et portfolio"
+description: "Personal website, CV and portfolio"
 author: "Gabriel"
+github_username: gcoh
 
 # URL configuration
-# Pour un site "projet" (repo resume) : https://gcoh.github.io/resume
-# Pour un site "utilisateur" (repo gcoh.github.io) : https://gcoh.github.io
+# Projet site (ce repo) : https://gcoh.github.io/resume
+# Si tu renommes le repo en gcoh.github.io : https://gcoh.github.io
 baseurl: "/resume"
 url: "https://gcoh.github.io"
 
+# Language settings
+default_lang: en
+languages:
+  en: English
+  fr: Français
+  he: עברית
+
 # Build settings
 markdown: kramdown
-remote_theme: pages-themes/minimal
 
-# Plugins
+# Plugins (GitHub Pages compatible)
 plugins:
-  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
 

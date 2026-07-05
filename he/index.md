@@ -120,7 +120,7 @@ description: "גבריאל כהן — 20+ שנות ניסיון במערכות �
 
     <section class="section" id="contact">
         <h2><i class="fa-solid fa-envelope"></i> צור קשר</h2>
-        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <form class="contact-form" action="https://formspree.io/f/xaqgvbod" method="POST">
             <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off">
             <input type="text" name="name" placeholder="שם" required>
             <input type="email" name="_replyto" placeholder="אימייל" required>

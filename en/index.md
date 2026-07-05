@@ -117,7 +117,7 @@ description: "Gabriel Cohen — 20+ years in financial systems, Calypso, DevOps 
 
     <section class="section" id="contact">
         <h2><i class="fa-solid fa-envelope"></i> Contact</h2>
-        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <form class="contact-form" action="https://formspree.io/f/xaqgvbod" method="POST">
             <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off">
             <input type="text" name="name" placeholder="Name" required>
             <input type="email" name="_replyto" placeholder="Email" required>

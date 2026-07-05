@@ -12,7 +12,7 @@ description: "Gabriel Cohen — 20+ ans d'expertise en systèmes financiers, Cal
 
 <section class="section" id="summary">
     <h2><i class="fa-solid fa-user-tie"></i> Résumé Professionnel</h2>
-    <p>Expert senior en systèmes financiers, spécialisé en <strong>Calypso (Nasdaq)</strong>, CI/CD et plateformes de données. Capacité avérée à faire le pont entre métier et technologie, piloter des migrations complexes et déployer l'automatisation qui améliore la fiabilité et réduit les coûts opérationnels.</p>
+    <p>Expert senior en systèmes financiers, capable de faire le pont entre les équipes métier et technique. Spécialisé dans les plateformes de trading, le CI/CD et les architectures data, il a piloté plusieurs migrations complexes et mis en place des automatisations réduisant significativement les coûts opérationnels.</p>
 </section>
 
 <section class="section" id="impact">

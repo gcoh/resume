@@ -12,7 +12,7 @@ description: "Gabriel Cohen — 20+ years in financial systems, Calypso, DevOps 
 
 <section class="section" id="summary">
     <h2><i class="fa-solid fa-user-tie"></i> Professional Summary</h2>
-    <p>Senior expert in financial systems, specialized in <strong>Calypso (Nasdaq)</strong>, CI/CD, and data platforms. Proven ability to bridge business and technology, lead complex migrations, and drive automation that improves reliability and reduces operational cost.</p>
+    <p>Senior expert in financial systems, able to bridge business and technical teams. Specialized in trading platforms, CI/CD, and data architectures, he has led several complex migrations and implemented automation that significantly reduces operational costs.</p>
 </section>
 
 <section class="section" id="impact">

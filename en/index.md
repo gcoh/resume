@@ -8,7 +8,7 @@ description: "Gabriel Cohen — 20+ years in financial systems, Calypso, DevOps 
 <section class="hero section">
     <h2>Tech Lead / Solution Architect – Financial Systems &amp; Data Platforms</h2>
     <p class="sub">20+ years delivering large-scale, mission-critical environments</p>
-    <p class="email">cohen.gabriel@gmail.com</p>
+    <p class="email print-only">cohen.gabriel@gmail.com</p>
 </section>
 
 <section class="section" id="summary">

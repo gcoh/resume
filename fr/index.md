@@ -8,7 +8,7 @@ description: "Gabriel Cohen — 20+ ans d'expertise en systèmes financiers, Cal
 <section class="hero section">
     <h2>Tech Lead / Architecte Solution – Systèmes Financiers &amp; Plateformes de Données</h2>
     <p class="sub">20+ ans d'expérience en environnements critiques à grande échelle</p>
-    <p class="email">cohen.gabriel@gmail.com</p>
+    <p class="email print-only">cohen.gabriel@gmail.com</p>
 </section>
 
 <section class="section" id="summary">

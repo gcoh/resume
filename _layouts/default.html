@@ -530,15 +530,11 @@
             .exp-item ul { font-size: 0.62rem; padding-left: 0.8rem; margin: 0; }
             .exp-item ul li { margin-bottom: 0.12rem; }
 
-            /* Print tables */
             .print-only { display: block; }
-            .screen-only { display: none; }
-            .print-table { width: 100%; border-collapse: collapse; font-size: 0.7rem; }
-            .print-table th { background: #1e293b; color: #fff; padding: 0.2rem 0.4rem; text-align: left; font-size: 0.72rem; font-weight: 600; }
-            .print-table td { padding: 0.15rem 0.4rem; border-bottom: 0.5px solid #ddd; }
-            .print-table tr:last-child td { border-bottom: none; }
-            #skills .skills-grid, #ai .screen-only, #languages .tags { display: none; }
-            #ai, #languages { border: 0.5px solid #ddd; padding: 0.45rem 0.6rem; margin-bottom: 0.35rem; border-radius: 4px; }
+            .skills-grid { grid-template-columns: 1fr 1fr 1fr; gap: 0.2rem 0.5rem; }
+            .skill-group h3 { font-size: 0.68rem; margin-bottom: 0.1rem; }
+            .skill-group .tag { font-size: 0.6rem; padding: 0.08rem 0.3rem; }
+            .bottom-cols { display: grid !important; grid-template-columns: 1fr 1fr; gap: 0.25rem; }
 
             .btn-submit, .btn-pdf, .sidebar-langs, .contact-form, footer { display: none; }
             #contact { display: none; }

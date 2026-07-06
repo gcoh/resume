@@ -91,30 +91,12 @@ description: "Gabriel Cohen — 20+ years in financial systems, Calypso, DevOps 
             </div>
         </div>
     </div>
-
-    <!-- Print-only skills table -->
-    <div class="print-only">
-        <table class="print-table">
-            <tr><th>Category</th><th>Technologies</th></tr>
-            <tr><td>DevOps &amp; Tools</td><td>Jenkins, Docker, Kubernetes, CI/CD, Harbor, ArgoCD, Rancher, Portainer, Gitea, MinIO, Headlamp, Traefik, AWS, Control-M, Git, GitHub Actions, n8n</td></tr>
-            <tr><td>Monitoring</td><td>Zabbix, ELK, Grafana, AppDynamics, Prometheus</td></tr>
-            <tr><td>Systems</td><td>Linux/Unix, Windows Server, VMware, Citrix</td></tr>
-            <tr><td>Databases</td><td>Oracle, SQL Server, SSIS</td></tr>
-            <tr><td>Programming</td><td>Python, Java, C#, PowerShell, Bash</td></tr>
-        </table>
-    </div>
 </section>
 
 <div class="bottom-cols">
     <section class="section" id="ai">
         <h2><i class="fa-solid fa-robot"></i> AI &amp; Automation</h2>
-        <p class="screen-only" style="font-size:0.82rem;">Integrated AI tools (LLMs) into operational workflows, automated processes using <strong>n8n</strong> and APIs, and developed data/reporting automation solutions. Using <strong>Ollama, Hermes, PyTorch, FastAPI, MCP</strong>. Orchestrating <strong>K8s</strong>, build and monitoring with <strong>Agent</strong>.</p>
-        <div class="print-only">
-            <table class="print-table">
-                <tr><th>AI &amp; Automation</th></tr>
-                <tr><td>LLMs, Ollama, Hermes, PyTorch, FastAPI, MCP, n8n, APIs — Orchestrating K8s, build &amp; monitoring with Agent</td></tr>
-            </table>
-        </div>
+        <p style="font-size:0.82rem;">Integrated AI tools (LLMs) into operational workflows, automated processes using <strong>n8n</strong> and APIs, and developed data/reporting automation solutions. Using <strong>Ollama, Hermes, PyTorch, FastAPI, MCP</strong>. Orchestrating <strong>K8s</strong>, build and monitoring with <strong>Agent</strong>.</p>
     </section>
 
     <section class="section" id="education">
@@ -127,18 +109,10 @@ description: "Gabriel Cohen — 20+ years in financial systems, Calypso, DevOps 
 <div class="bottom-cols">
     <section class="section" id="languages">
         <h2><i class="fa-solid fa-language"></i> Languages</h2>
-        <div class="tags screen-only" style="margin-top:0.3rem;">
+        <div class="tags" style="margin-top:0.3rem;">
             <span class="tag">🇫🇷 French — Native</span>
             <span class="tag">🇮🇱 Hebrew — Fluent</span>
             <span class="tag">🇺🇸 English — Professional</span>
-        </div>
-        <div class="print-only">
-            <table class="print-table">
-                <tr><th>Language</th><th>Level</th></tr>
-                <tr><td>French</td><td>Native</td></tr>
-                <tr><td>Hebrew</td><td>Fluent</td></tr>
-                <tr><td>English</td><td>Professional</td></tr>
-            </table>
         </div>
     </section>
 

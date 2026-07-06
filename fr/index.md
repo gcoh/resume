@@ -8,6 +8,7 @@ description: "Gabriel Cohen — 20+ ans d'expertise en systèmes financiers, Cal
 <section class="hero section">
     <h2>Tech Lead / Architecte Solution – Systèmes Financiers &amp; Plateformes de Données</h2>
     <p class="sub">20+ ans d'expérience en environnements critiques à grande échelle</p>
+    <p class="email">cohen.gabriel@gmail.com</p>
 </section>
 
 <section class="section" id="summary">
@@ -90,12 +91,29 @@ description: "Gabriel Cohen — 20+ ans d'expertise en systèmes financiers, Cal
             </div>
         </div>
     </div>
+
+    <div class="print-only">
+        <table class="print-table">
+            <tr><th>Catégorie</th><th>Technologies</th></tr>
+            <tr><td>DevOps &amp; Outils</td><td>Jenkins, Docker, Kubernetes, CI/CD, Harbor, ArgoCD, Rancher, Portainer, Gitea, MinIO, Headlamp, Traefik, AWS, Control-M, Git, GitHub Actions, n8n</td></tr>
+            <tr><td>Monitoring</td><td>Zabbix, ELK, Grafana, AppDynamics, Prometheus</td></tr>
+            <tr><td>Systèmes</td><td>Linux/Unix, Windows Server, VMware, Citrix</td></tr>
+            <tr><td>Bases de données</td><td>Oracle, SQL Server, SSIS</td></tr>
+            <tr><td>Programmation</td><td>Python, Java, C#, PowerShell, Bash</td></tr>
+        </table>
+    </div>
 </section>
 
 <div class="bottom-cols">
     <section class="section" id="ai">
         <h2><i class="fa-solid fa-robot"></i> IA &amp; Automatisation</h2>
-        <p style="font-size:0.82rem;">Intégration d'outils d'IA (LLMs) dans les flux opérationnels, automatisation des processus via <strong>n8n</strong> et APIs, développement de solutions de data et reporting. Usage de <strong>Ollama, Hermes, PyTorch, FastAPI, MCP</strong>. Pilotage de <strong>K8S</strong>, build et monitoring avec <strong>Agent</strong>.</p>
+        <p class="screen-only" style="font-size:0.82rem;">Intégration d'outils d'IA (LLMs) dans les flux opérationnels, automatisation des processus via <strong>n8n</strong> et APIs, développement de solutions de data et reporting. Usage de <strong>Ollama, Hermes, PyTorch, FastAPI, MCP</strong>. Pilotage de <strong>K8S</strong>, build et monitoring avec <strong>Agent</strong>.</p>
+        <div class="print-only">
+            <table class="print-table">
+                <tr><th>IA &amp; Automatisation</th></tr>
+                <tr><td>LLMs, Ollama, Hermes, PyTorch, FastAPI, MCP, n8n, APIs — Pilotage K8s, build &amp; monitoring avec Agent</td></tr>
+            </table>
+        </div>
     </section>
 
     <section class="section" id="education">
@@ -108,10 +126,18 @@ description: "Gabriel Cohen — 20+ ans d'expertise en systèmes financiers, Cal
 <div class="bottom-cols">
     <section class="section" id="languages">
         <h2><i class="fa-solid fa-language"></i> Langues</h2>
-        <div class="tags" style="margin-top:0.3rem;">
+        <div class="tags screen-only" style="margin-top:0.3rem;">
             <span class="tag">🇫🇷 Français — Langue maternelle</span>
             <span class="tag">🇮🇱 Hébreu — Courant</span>
             <span class="tag">🇺🇸 Anglais — Professionnel</span>
+        </div>
+        <div class="print-only">
+            <table class="print-table">
+                <tr><th>Langue</th><th>Niveau</th></tr>
+                <tr><td>Français</td><td>Langue maternelle</td></tr>
+                <tr><td>Hébreu</td><td>Courant</td></tr>
+                <tr><td>Anglais</td><td>Professionnel</td></tr>
+            </table>
         </div>
     </section>
 

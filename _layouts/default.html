@@ -260,6 +260,16 @@
             margin-top: 0.2rem;
         }
 
+        .hero .email {
+            color: var(--accent-brown);
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-top: 0.15rem;
+        }
+
+        /* Print-only elements */
+        .print-only { display: none; }
+
         /* Tags */
         .tags {
             display: flex;
@@ -504,10 +514,11 @@
             .sidebar { display: none; }
             .main { margin-left: 0; max-width: 100%; padding: 0; }
             .hero { padding: 0 0 0.25rem; margin: 0; }
-            .hero h2 { font-size: 1.15rem; margin: 0; }
+            .hero h2 { font-size: 1.25rem; margin: 0; font-weight: 800; color: #1e293b !important; }
             .hero .sub { font-size: 0.75rem; margin-top: 0.1rem; }
+            .hero .email { font-size: 0.72rem; color: #1e293b !important; font-weight: 600; }
             .section { box-shadow: none; border: 0.5px solid #ddd; break-inside: avoid; padding: 0.45rem 0.6rem; margin-bottom: 0.35rem; border-radius: 4px; }
-            .section h2 { font-size: 0.85rem; margin-bottom: 0.25rem; padding-bottom: 0.2rem; }
+            .section h2 { font-size: 0.85rem; margin-bottom: 0.25rem; padding-bottom: 0.2rem; color: #1e293b !important; }
             .section h3 { font-size: 0.75rem; margin-bottom: 0.15rem; }
             .section p { font-size: 0.72rem; }
             .impact-list { grid-template-columns: 1fr 1fr; gap: 0 0.5rem; }
@@ -518,16 +529,19 @@
             .exp-item .date { font-size: 0.62rem; margin-bottom: 0.15rem; }
             .exp-item ul { font-size: 0.62rem; padding-left: 0.8rem; margin: 0; }
             .exp-item ul li { margin-bottom: 0.12rem; }
-            .skills-grid { grid-template-columns: 1fr 1fr 1fr; gap: 0.2rem 0.5rem; }
-            .skill-group h3 { font-size: 0.68rem; margin-bottom: 0.1rem; }
-            .skill-group .tag { font-size: 0.6rem; padding: 0.08rem 0.3rem; }
-            .bottom-cols { gap: 0.25rem; }
-            .bottom-cols .section p { font-size: 0.68rem; }
-            .tag { font-size: 0.6rem; padding: 0.1rem 0.35rem; }
+
+            /* Print tables */
+            .print-only { display: block; }
+            .screen-only { display: none; }
+            .print-table { width: 100%; border-collapse: collapse; font-size: 0.7rem; }
+            .print-table th { background: #1e293b; color: #fff; padding: 0.2rem 0.4rem; text-align: left; font-size: 0.72rem; font-weight: 600; }
+            .print-table td { padding: 0.15rem 0.4rem; border-bottom: 0.5px solid #ddd; }
+            .print-table tr:last-child td { border-bottom: none; }
+            #skills .skills-grid, #ai .screen-only, #languages .tags { display: none; }
+            #ai, #languages { border: 0.5px solid #ddd; padding: 0.45rem 0.6rem; margin-bottom: 0.35rem; border-radius: 4px; }
+
             .btn-submit, .btn-pdf, .sidebar-langs, .contact-form, footer { display: none; }
             #contact { display: none; }
-            #languages { border: none; }
-            #languages .tags { margin-top: 0.15rem; }
         }
 
         /* RTL */

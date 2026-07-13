@@ -15,7 +15,7 @@ description: "גבריאל כהן — 20+ שנות ניסיון בלינוקס, 
 
 <section class="section" id="summary">
     <h2><i class="fa-solid fa-user-tie"></i> תקציר</h2>
-    <p>Senior Platform Engineer עם למעלה מ-20 שנות ניסיון בתכנון, מודרניזציה ותפעול של תשתיות קריטיות. אני מתמחה בפלטפורמות לינוקס, אוטומציה של הפצות, צינורות CI/CD ופתרון תקלות בסביבות ייצור.</p>
+    <p>Senior Platform Engineer עם למעלה מ-20 שנות ניסיון בתכנון, מודרניזציה ותפעול של תשתיות קריטיות. אני מתמחה בפלטפורמות לינוקס, אוטומציה של הפצות, פיפליין CI/CD ופתרון תקלות בסביבות ייצור.</p>
     <p style="margin-top:0.4rem;">לאורך הקריירה שלי הובלתי מיגרציות תשתית מורכבות, הפכתי תהליכים ידניים שבריריים לפלטפורמות אמינות וקלות לתחזוקה, ואוטמטתי מאות הפצות. החוזקה שלי היא להבין מערכות מורכבות במהירות, לזהות שורש בעיה ולתכנן פתרונות ארוכי טווח שמפחיתים מאמץ תפעולי ומשפרים אמינות.</p>
 </section>
 
@@ -49,7 +49,7 @@ description: "גבריאל כהן — 20+ שנות ניסיון בלינוקס, 
             <li>פיתוח כלים פנימיים שהחליפו תהליכים תפעוליים ידניים.</li>
             <li>הטמעת ניטור ייצור באמצעות Grafana, Zabbix, ELK ו-AppDynamics.</li>
             <li>אבחון ופתרון תקלות ייצור בעלות השפעה גבוהה במערכות מבוזרות מורכבות.</li>
-            <li>עבודה רוחבית על לינוקס, Oracle, צינורות CI/CD ואפליקציות פיננסיות לשיפור יציבות ויעילות תפעולית.</li>
+            <li>עבודה רוחבית על לינוקס, Oracle, פיפליין CI/CD ואפליקציות פיננסיות לשיפור יציבות ויעילות תפעולית.</li>
         </ul>
     </div>
 
@@ -82,7 +82,7 @@ description: "גבריאל כהן — 20+ שנות ניסיון בלינוקס, 
         <span class="strength-item"><i class="fa-solid fa-check"></i> מומחיות לינוקס</span>
         <span class="strength-item"><i class="fa-solid fa-check"></i> אוטומציה וסטנדרטיזציה</span>
         <span class="strength-item"><i class="fa-solid fa-check"></i> פתרון תקלות בייצור</span>
-        <span class="strength-item"><i class="fa-solid fa-check"></i> צינורות CI/CD</span>
+        <span class="strength-item"><i class="fa-solid fa-check"></i> פיפליין CI/CD</span>
         <span class="strength-item"><i class="fa-solid fa-check"></i> אופטימיזציית ביצועים</span>
         <span class="strength-item"><i class="fa-solid fa-check"></i> פתרון בעיות מורכבות</span>
         <span class="strength-item"><i class="fa-solid fa-check"></i> ניתוח שורש בעיה</span>

@@ -92,7 +92,7 @@ description: "Gabriel Cohen — 20+ ans d'expertise en Linux, automatisation, in
 
 <section class="section" id="skills">
     <h2><i class="fa-solid fa-gears"></i> Compétences Techniques</h2>
-    <div class="skills-grid skills-five">
+    <div class="skills-grid">
         <div class="skill-group">
             <h3><i class="fa-solid fa-server"></i> Platform Engineering</h3>
             <div class="tags">
@@ -121,6 +121,12 @@ description: "Gabriel Cohen — 20+ ans d'expertise en Linux, automatisation, in
             <h3><i class="fa-solid fa-layer-group"></i> Développement</h3>
             <div class="tags">
                 <span class="tag">Python</span><span class="tag">Java</span><span class="tag">C#</span><span class="tag">FastAPI</span><span class="tag">REST APIs</span>
+            </div>
+        </div>
+        <div class="skill-group">
+            <h3><i class="fa-solid fa-robot"></i> IA &amp; LLM</h3>
+            <div class="tags">
+                <span class="tag">vLLM</span><span class="tag">MCP</span><span class="tag">Ollama</span><span class="tag">Claude Code</span><span class="tag">RAG</span>
             </div>
         </div>
     </div>

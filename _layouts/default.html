@@ -425,26 +425,26 @@
             flex-shrink: 0;
         }
 
-        /* Skills — 5 columns */
-        .skills-five {
+        /* Skills — 3-column grid */
+        .skills-grid {
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 0.5rem 0.75rem;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 0.5rem 1rem;
         }
 
-        .skills-five .skill-group h3 {
-            font-size: 0.72rem;
+        .skill-group h3 {
+            font-size: 0.76rem;
             margin-bottom: 0.25rem;
             color: var(--accent-brown);
         }
 
-        .skills-five .skill-group .tags {
+        .skill-group .tags {
             gap: 0.2rem;
         }
 
-        .skills-five .skill-group .tag {
-            font-size: 0.68rem;
-            padding: 0.12rem 0.4rem;
+        .skill-group .tag {
+            font-size: 0.7rem;
+            padding: 0.12rem 0.45rem;
         }
 
         /* Two-column for bottom sections */
@@ -640,14 +640,19 @@
             .strength-item i { font-size: 0.55rem; }
 
             /* Skills */
-            .skills-five { grid-template-columns: repeat(5, 1fr); gap: 0.15rem 0.4rem; }
-            .skills-five .skill-group h3 { font-size: 0.64rem; margin-bottom: 0.08rem; }
-            .skills-five .skill-group .tag { font-size: 0.56rem; padding: 0.06rem 0.25rem; }
+            .skills-grid { grid-template-columns: 1fr 1fr 1fr; gap: 0.15rem 0.4rem; }
+            .skills-grid .skill-group h3 { font-size: 0.64rem; margin-bottom: 0.08rem; }
+            .skills-grid .skill-group .tag { font-size: 0.56rem; padding: 0.06rem 0.25rem; }
 
             .bottom-cols { display: grid !important; grid-template-columns: 1fr 1fr; gap: 0.25rem; }
 
             .btn-submit, .btn-pdf, .sidebar-langs, .contact-form, footer { display: none; }
             #contact { display: none; }
+
+            /* RTL print fixes */
+            [dir="rtl"] .main { margin-right: 0; }
+            [dir="rtl"] .exp-achievements { padding-left: 0; padding-right: 0.8rem; }
+            [dir="rtl"] .exp-item ul { padding-left: 0; padding-right: 0.7rem; }
         }
 
         /* RTL */
@@ -757,11 +762,11 @@
                 gap: 0.2rem;
             }
 
-            .exp-other, .skills-five, .strengths-grid, .bottom-cols {
+            .exp-other, .strengths-grid, .bottom-cols {
                 grid-template-columns: 1fr;
             }
 
-            .skills-five {
+            .skills-grid {
                 grid-template-columns: 1fr 1fr;
             }
         }

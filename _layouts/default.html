@@ -597,7 +597,18 @@
             * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
             body { background: #fff; font-size: 10.5px; line-height: 1.5; color: #1a1a1a; }
             .sidebar { display: none; }
-            .main { margin-left: 0; max-width: 100%; padding: 0; }
+            .main { margin-left: 0; max-width: 100%; padding: 0; display: flex; flex-direction: column; }
+
+            /* ── Print section reordering: Skills right after Summary ── */
+            .hero                     { order: 0; }
+            #summary                  { order: 1; }
+            #skills                   { order: 2; }
+            #achievements             { order: 3; }
+            #experience               { order: 4; }
+            #strengths                { order: 5; }
+            .bottom-cols:has(#education) { order: 6; }
+            .bottom-cols:has(#contact)   { order: 7; }
+            .bottom-cols              { width: 100%; }
 
             /* Hero */
             .hero { padding: 0.2rem 0 0.3rem; margin: 0; text-align: center; }
@@ -649,7 +660,7 @@
             .bottom-cols { display: grid !important; grid-template-columns: 1fr 1fr; gap: 0.3rem; }
 
             .btn-submit, .btn-pdf, .sidebar-langs, .contact-form, footer { display: none; }
-            #contact { display: none; }
+            #contact, .bottom-cols:has(#contact) { display: none; }
 
             /* RTL print fixes */
             [dir="rtl"] .main { margin-right: 0; }

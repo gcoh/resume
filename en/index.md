@@ -1,112 +1,138 @@
 ---
 layout: default
 lang: en
-title: "Gabriel Cohen — Tech Lead / Solution Architect"
-description: "Gabriel Cohen — 20+ years in financial systems, Calypso, DevOps & data platforms"
+title: "Gabriel Cohen — Senior Platform Engineer"
+description: "Gabriel Cohen — Senior Platform Engineer with 20+ years in Linux, automation, infrastructure and DevOps"
 ---
 
 <section class="hero section">
-    <h2>Tech Lead / Solution Architect – Financial Systems &amp; Data Platforms</h2>
-    <p class="sub">20+ years delivering large-scale, mission-critical environments</p>
+    <h2>Gabriel Cohen</h2>
+    <p class="sub">Senior Platform Engineer &mdash; Linux &bull; Automation &bull; Infrastructure &bull; DevOps</p>
+    <p class="tagline">Building reliable platforms through automation, standardization and deep technical expertise.</p>
     <p class="email print-only">cohen.gabriel@gmail.com</p>
+    <p class="phone print-only">053.708.68.19</p>
 </section>
 
 <section class="section" id="summary">
-    <h2><i class="fa-solid fa-user-tie"></i> Professional Summary</h2>
-    <p>Senior expert in financial systems, I bridge business and technical teams. Specialized in trading platforms, CI/CD, and data architectures, I have led several complex migrations and implemented automation that significantly reduces operational costs.</p>
+    <h2><i class="fa-solid fa-user-tie"></i> Summary</h2>
+    <p>Senior Platform Engineer with more than 20 years of experience designing, modernizing and operating mission-critical infrastructures. I specialize in Linux platforms, deployment automation, CI/CD pipelines and production troubleshooting.</p>
+    <p style="margin-top:0.4rem;">Throughout my career, I have led complex infrastructure migrations, automated hundreds of deployments, standardized operational processes and transformed fragile manual procedures into reliable and maintainable platforms. My strength is understanding complex systems quickly, identifying root causes and designing long-term solutions that reduce operational effort while improving reliability.</p>
 </section>
 
-<section class="section" id="impact">
-    <h2><i class="fa-solid fa-chart-line"></i> Key Impact</h2>
-    <ul class="impact-list">
-        <li><i class="fa-solid fa-circle"></i> <strong>Orchestrating</strong> large-scale migrations across multiple environments, ensuring business continuity and demonstrating mastery of complex infrastructure at scale</li>
-        <li><i class="fa-solid fa-circle"></i> <strong>Reducing</strong> deployment time and eliminating manual errors via CI/CD automation</li>
-        <li><i class="fa-solid fa-circle"></i> <strong>Improving</strong> production visibility with Zabbix, ELK, Grafana, AppDynamics</li>
-        <li><i class="fa-solid fa-circle"></i> <strong>Optimizing</strong> Oracle archiving for high-volume systems</li>
-        <li><i class="fa-solid fa-circle"></i> <strong>Bridging</strong> business, data, and infrastructure teams for delivery continuity</li>
+<section class="section" id="achievements">
+    <h2><i class="fa-solid fa-chart-line"></i> Key Achievements</h2>
+    <ul class="impact-list achievements-list">
+        <li><i class="fa-solid fa-check"></i> Led the migration of nearly 80 production Linux servers with zero business disruption.</li>
+        <li><i class="fa-solid fa-check"></i> Automated hundreds of application deployments, reducing manual effort by approximately 80%.</li>
+        <li><i class="fa-solid fa-check"></i> Standardized installation and upgrade procedures across multiple production environments.</li>
+        <li><i class="fa-solid fa-check"></i> Successfully delivered around 50 major application upgrades including critical banking platforms.</li>
+        <li><i class="fa-solid fa-check"></i> Designed monitoring and alerting solutions improving production visibility and reducing incident resolution time.</li>
+        <li><i class="fa-solid fa-check"></i> Developed internal automation tools eliminating repetitive operational tasks.</li>
+        <li><i class="fa-solid fa-check"></i> Frequently trusted to diagnose and resolve the most complex production incidents.</li>
     </ul>
 </section>
 
 <section class="section" id="experience">
     <h2><i class="fa-solid fa-building"></i> Professional Experience</h2>
-    <div class="exp-grid">
-        <div class="exp-item">
-            <h3>DevOps &amp; System Engineer</h3>
-            <div class="date">Bank Leumi — 2018–2026</div>
-            <ul>
-                <li>Linux &amp; Oracle administration</li>
-                <li>CI/CD pipeline design &amp; implementation</li>
-                <li>Deployment &amp; workflow automation</li>
-                <li>Large-scale production management</li>
-                <li>Monitoring &amp; observability (Zabbix, ELK, Grafana)</li>
-            </ul>
+
+    <div class="exp-highlight">
+        <div class="exp-highlight-header">
+            <h3>Senior Platform Engineer</h3>
+            <span class="date">Bank Leumi — 2018–2026</span>
         </div>
+        <p class="exp-intro">Responsible for designing, automating and maintaining mission-critical financial platforms.</p>
+        <ul class="exp-achievements">
+            <li>Migrated approximately 80 Linux servers to new production platforms.</li>
+            <li>Delivered around 50 large-scale application upgrades including Calypso environments.</li>
+            <li>Designed deployment automation reducing manual work by approximately 80%.</li>
+            <li>Built standardized deployment procedures ensuring reliable and repeatable installations.</li>
+            <li>Developed internal tools replacing manual operational processes.</li>
+            <li>Implemented production monitoring using Grafana, Zabbix, ELK and AppDynamics.</li>
+            <li>Diagnosed and resolved high-impact production incidents across complex distributed systems.</li>
+            <li>Worked across Linux, Oracle, CI/CD pipelines and financial applications to improve platform stability and operational efficiency.</li>
+        </ul>
+    </div>
+
+    <div class="exp-other">
         <div class="exp-item">
-            <h3>Project Manager &amp; System Admin</h3>
+            <h3>Project Manager &amp; System Administrator</h3>
             <div class="date">Bank Postale — 2007–2017</div>
             <ul>
-                <li>Infrastructure projects (Windows, Linux, VMware)</li>
-                <li>SQL workflows for reporting &amp; integration</li>
-                <li>System reliability, security &amp; performance</li>
+                <li>Led infrastructure projects across Windows, Linux and VMware environments.</li>
+                <li>Designed SQL workflows for reporting and system integration.</li>
+                <li>Ensured system reliability, security and performance across all platforms.</li>
             </ul>
         </div>
         <div class="exp-item">
-            <h3>PM &amp; Software Engineer</h3>
+            <h3>Project Manager &amp; Software Engineer</h3>
             <div class="date">ODDO — 1996–2006</div>
             <ul>
-                <li>Back/Middle Office systems (C#, SQL Server)</li>
-                <li>Data architecture &amp; internal applications</li>
+                <li>Built Back and Middle Office systems in C# and SQL Server.</li>
+                <li>Designed data architectures and internal business applications.</li>
             </ul>
         </div>
     </div>
 </section>
 
+<section class="section" id="strengths">
+    <h2><i class="fa-solid fa-star"></i> Core Strengths</h2>
+    <div class="strengths-grid">
+        <span class="strength-item"><i class="fa-solid fa-check"></i> Platform Engineering</span>
+        <span class="strength-item"><i class="fa-solid fa-check"></i> Infrastructure Modernization</span>
+        <span class="strength-item"><i class="fa-solid fa-check"></i> Linux Expertise</span>
+        <span class="strength-item"><i class="fa-solid fa-check"></i> Automation &amp; Standardization</span>
+        <span class="strength-item"><i class="fa-solid fa-check"></i> Production Troubleshooting</span>
+        <span class="strength-item"><i class="fa-solid fa-check"></i> CI/CD Pipelines</span>
+        <span class="strength-item"><i class="fa-solid fa-check"></i> Performance Optimization</span>
+        <span class="strength-item"><i class="fa-solid fa-check"></i> Complex Problem Solving</span>
+        <span class="strength-item"><i class="fa-solid fa-check"></i> Root Cause Analysis</span>
+        <span class="strength-item"><i class="fa-solid fa-check"></i> Cross-team Collaboration</span>
+    </div>
+</section>
+
 <section class="section" id="skills">
-    <h2><i class="fa-solid fa-gears"></i> Skills</h2>
-    <div class="skills-grid">
+    <h2><i class="fa-solid fa-gears"></i> Technical Skills</h2>
+    <div class="skills-grid skills-five">
         <div class="skill-group">
-            <h3><i class="fa-solid fa-code-branch"></i> DevOps &amp; Tools</h3>
+            <h3><i class="fa-solid fa-server"></i> Platform Engineering</h3>
             <div class="tags">
-                <span class="tag">Jenkins</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">CI/CD</span><span class="tag">Harbor</span><span class="tag">ArgoCD</span><span class="tag">Rancher</span><span class="tag">Portainer</span><span class="tag">Gitea</span><span class="tag">MinIO</span><span class="tag">Headlamp</span><span class="tag">Traefik</span><span class="tag">AWS</span><span class="tag">Control-M</span><span class="tag">Git</span><span class="tag">GitHub Actions</span><span class="tag">n8n</span>
+                <span class="tag">Linux</span><span class="tag">Windows</span><span class="tag">VMware</span><span class="tag">Oracle</span><span class="tag">SQL Server</span>
             </div>
         </div>
         <div class="skill-group">
-            <h3><i class="fa-solid fa-eye"></i> Monitoring</h3>
+            <h3><i class="fa-solid fa-code"></i> Automation</h3>
             <div class="tags">
-                <span class="tag">Zabbix</span><span class="tag">ELK</span><span class="tag">Grafana</span><span class="tag">AppDynamics</span><span class="tag">Prometheus</span>
-            </div>
-            <h3 style="margin-top:0.5rem;"><i class="fa-solid fa-server"></i> Systems</h3>
-            <div class="tags">
-                <span class="tag">Linux/Unix</span><span class="tag">Windows Server</span><span class="tag">VMware</span><span class="tag">Citrix</span>
+                <span class="tag">Python</span><span class="tag">Bash</span><span class="tag">PowerShell</span><span class="tag">CI/CD</span><span class="tag">Jenkins</span><span class="tag">GitHub Actions</span>
             </div>
         </div>
         <div class="skill-group">
-            <h3><i class="fa-solid fa-database"></i> Databases</h3>
+            <h3><i class="fa-solid fa-box"></i> Containers &amp; Cloud</h3>
             <div class="tags">
-                <span class="tag">Oracle</span><span class="tag">SQL Server</span><span class="tag">SSIS</span>
+                <span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Rancher</span><span class="tag">ArgoCD</span><span class="tag">Harbor</span><span class="tag">AWS</span>
             </div>
-            <h3 style="margin-top:0.5rem;"><i class="fa-solid fa-code"></i> Programming</h3>
+        </div>
+        <div class="skill-group">
+            <h3><i class="fa-solid fa-eye"></i> Observability</h3>
             <div class="tags">
-                <span class="tag">Python</span><span class="tag">Java</span><span class="tag">C#</span><span class="tag">PowerShell</span><span class="tag">Bash</span>
+                <span class="tag">Grafana</span><span class="tag">Prometheus</span><span class="tag">Zabbix</span><span class="tag">ELK</span><span class="tag">AppDynamics</span>
+            </div>
+        </div>
+        <div class="skill-group">
+            <h3><i class="fa-solid fa-layer-group"></i> Development</h3>
+            <div class="tags">
+                <span class="tag">Python</span><span class="tag">Java</span><span class="tag">C#</span><span class="tag">FastAPI</span><span class="tag">REST APIs</span>
             </div>
         </div>
     </div>
 </section>
 
 <div class="bottom-cols">
-    <section class="section" id="ai">
-        <h2><i class="fa-solid fa-robot"></i> AI &amp; Automation</h2>
-        <p style="font-size:0.82rem;">Integrated AI tools (LLMs) into operational workflows, automated processes using <strong>n8n</strong> and APIs, and developed data/reporting automation solutions. Using <strong>Ollama, Hermes, PyTorch, FastAPI, MCP</strong>. Orchestrating <strong>K8s</strong>, build and monitoring with <strong>Agent</strong>.</p>
-    </section>
-
     <section class="section" id="education">
         <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
         <p style="font-size:0.82rem;"><strong>B.Sc Computer Science &amp; Robotics</strong> — University Paris</p>
         <p style="font-size:0.78rem;color:var(--muted);margin-top:0.25rem;">Training: DevOps, AWS, Python, Docker, Ansible</p>
     </section>
-</div>
 
-<div class="bottom-cols">
     <section class="section" id="languages">
         <h2><i class="fa-solid fa-language"></i> Languages</h2>
         <div class="tags" style="margin-top:0.3rem;">
@@ -115,7 +141,9 @@ description: "Gabriel Cohen — 20+ years in financial systems, Calypso, DevOps 
             <span class="tag">🇺🇸 English — Professional</span>
         </div>
     </section>
+</div>
 
+<div class="bottom-cols">
     <section class="section" id="contact">
         <h2><i class="fa-solid fa-envelope"></i> Contact</h2>
         <form class="contact-form" action="https://formspree.io/f/xaqgvbod" method="POST">

@@ -1,6 +1,6 @@
 <!---
   Layout: default — Gabriel Cohen
-  Design: Dark brown sidebar + beige content, Inter font, Font Awesome icons
+  Design: Dark sidebar + beige content, Inter font, Font Awesome icons
   RTL support for Hebrew
 --->
 {% assign lang_code = page.lang | default: 'en' %}
@@ -241,13 +241,13 @@
             background: transparent;
             border: none;
             box-shadow: none;
-            padding: 0.5rem 0.25rem 0.8rem;
+            padding: 0.3rem 0.25rem 0.6rem;
             margin-bottom: 0.5rem;
         }
 
         .hero h2 {
-            font-size: 1.35rem;
-            font-weight: 700;
+            font-size: 1.5rem;
+            font-weight: 800;
             color: var(--accent-brown);
             border: none;
             padding: 0;
@@ -255,9 +255,17 @@
         }
 
         .hero .sub {
+            color: var(--heading);
+            font-size: 0.88rem;
+            font-weight: 600;
+            margin-top: 0.15rem;
+        }
+
+        .hero .tagline {
             color: var(--muted);
-            font-size: 0.85rem;
-            margin-top: 0.2rem;
+            font-size: 0.82rem;
+            margin-top: 0.3rem;
+            font-style: italic;
         }
 
         .hero .email {
@@ -265,6 +273,13 @@
             font-size: 0.8rem;
             font-weight: 500;
             margin-top: 0.15rem;
+        }
+
+        .hero .phone {
+            color: var(--accent-brown);
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-top: 0.1rem;
         }
 
         /* Print-only elements */
@@ -287,51 +302,99 @@
             font-weight: 500;
         }
 
-        /* Impact list */
-        .impact-list {
+        /* Achievements list */
+        .achievements-list {
             list-style: none;
             padding: 0;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 0.3rem 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
         }
 
-        .impact-list li {
-            padding: 0.35rem 0;
+        .achievements-list li {
+            padding: 0.3rem 0;
             font-size: 0.82rem;
             display: flex;
             align-items: flex-start;
-            gap: 0.4rem;
+            gap: 0.45rem;
         }
 
-        .impact-list li i {
-            color: var(--accent-brown);
-            margin-top: 0.15rem;
+        .achievements-list li i {
+            color: #2d6a4f;
+            margin-top: 0.18rem;
             flex-shrink: 0;
-            font-size: 0.65rem;
+            font-size: 0.7rem;
         }
 
-        /* Experience grid */
-        .exp-grid {
+        /* Experience — highlight card */
+        .exp-highlight {
+            background: #fafaf7;
+            border: 1px solid var(--border);
+            border-radius: 7px;
+            padding: 0.9rem 1.1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .exp-highlight-header {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            margin-bottom: 0.3rem;
+        }
+
+        .exp-highlight-header h3 {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--accent-brown);
+        }
+
+        .exp-highlight-header .date {
+            font-size: 0.75rem;
+            color: var(--muted);
+            font-weight: 500;
+        }
+
+        .exp-intro {
+            font-size: 0.8rem;
+            color: var(--text);
+            margin-bottom: 0.45rem;
+            font-weight: 500;
+        }
+
+        .exp-achievements {
+            font-size: 0.78rem;
+            padding-left: 1.2rem;
+            color: var(--text);
+            display: flex;
+            flex-direction: column;
+            gap: 0.15rem;
+        }
+
+        .exp-achievements li {
+            margin-bottom: 0.1rem;
+        }
+
+        /* Other experience — side by side */
+        .exp-other {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
             gap: 0.75rem;
         }
 
         .exp-item h3 {
             font-size: 0.82rem;
-            margin-bottom: 0.3rem;
+            margin-bottom: 0.15rem;
         }
 
         .exp-item .date {
-            font-size: 0.7rem;
+            font-size: 0.72rem;
             color: var(--muted);
             font-weight: 400;
             margin-bottom: 0.35rem;
         }
 
         .exp-item ul {
-            font-size: 0.75rem;
+            font-size: 0.76rem;
             padding-left: 1.1rem;
             color: var(--text);
         }
@@ -340,26 +403,48 @@
             margin-bottom: 0.15rem;
         }
 
-        /* Skills grid */
-        .skills-grid {
+        /* Strengths grid */
+        .strengths-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 0.5rem 1rem;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.35rem 1rem;
         }
 
-        .skill-group h3 {
-            font-size: 0.76rem;
+        .strength-item {
+            display: flex;
+            align-items: center;
+            gap: 0.45rem;
+            padding: 0.35rem 0;
+            font-size: 0.82rem;
+            font-weight: 500;
+        }
+
+        .strength-item i {
+            color: #2d6a4f;
+            font-size: 0.7rem;
+            flex-shrink: 0;
+        }
+
+        /* Skills — 5 columns */
+        .skills-five {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.5rem 0.75rem;
+        }
+
+        .skills-five .skill-group h3 {
+            font-size: 0.72rem;
             margin-bottom: 0.25rem;
             color: var(--accent-brown);
         }
 
-        .skill-group .tags {
+        .skills-five .skill-group .tags {
             gap: 0.2rem;
         }
 
-        .skill-group .tag {
-            font-size: 0.7rem;
-            padding: 0.12rem 0.45rem;
+        .skills-five .skill-group .tag {
+            font-size: 0.68rem;
+            padding: 0.12rem 0.4rem;
         }
 
         /* Two-column for bottom sections */
@@ -506,34 +591,59 @@
         footer a { color: var(--accent-brown); text-decoration: none; }
         footer .fa-heart { color: #c46767; }
 
-        /* Print — clean 1-page A4 */
+        /* ── PRINT — clean, directly usable ── */
         @media print {
-            @page { margin: 0.4cm; size: A4; }
+            @page { margin: 0.5cm; size: A4; }
             * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-            body { background: #fff; font-size: 9px; line-height: 1.55; }
+            body { background: #fff; font-size: 8.5px; line-height: 1.45; color: #1a1a1a; }
             .sidebar { display: none; }
             .main { margin-left: 0; max-width: 100%; padding: 0; }
-            .hero { padding: 0 0 0.25rem; margin: 0; }
-            .hero h2 { font-size: 1.25rem; margin: 0; font-weight: 800; color: #1e293b !important; }
-            .hero .sub { font-size: 0.75rem; margin-top: 0.1rem; }
-            .hero .email { font-size: 0.72rem; color: #1e293b !important; font-weight: 600; }
-            .section { box-shadow: none; border: 0.5px solid #ddd; break-inside: avoid; padding: 0.45rem 0.6rem; margin-bottom: 0.35rem; border-radius: 4px; }
-            .section h2 { font-size: 0.85rem; margin-bottom: 0.25rem; padding-bottom: 0.2rem; color: #1e293b !important; }
-            .section h3 { font-size: 0.75rem; margin-bottom: 0.15rem; }
-            .section p { font-size: 0.72rem; }
-            .impact-list { grid-template-columns: 1fr 1fr; gap: 0 0.5rem; }
-            .impact-list li { font-size: 0.7rem; padding: 0.18rem 0; }
-            .impact-list li i { font-size: 0.55rem; margin-top: 0.15rem; }
-            .exp-grid { grid-template-columns: 1fr 1fr 1fr; gap: 0.3rem; }
-            .exp-item h3 { font-size: 0.72rem; margin-bottom: 0.05rem; }
-            .exp-item .date { font-size: 0.62rem; margin-bottom: 0.15rem; }
-            .exp-item ul { font-size: 0.62rem; padding-left: 0.8rem; margin: 0; }
-            .exp-item ul li { margin-bottom: 0.12rem; }
 
+            /* Hero */
+            .hero { padding: 0 0 0.2rem; margin: 0; text-align: center; }
+            .hero h2 { font-size: 1.5rem; margin: 0; font-weight: 800; color: #1e293b !important; }
+            .hero .sub { font-size: 0.78rem; margin-top: 0.1rem; color: #333; }
+            .hero .tagline { font-size: 0.72rem; margin-top: 0.15rem; color: #555; }
+            .hero .email { font-size: 0.72rem; color: #1e293b !important; font-weight: 600; }
+            .hero .phone { font-size: 0.72rem; color: #1e293b !important; font-weight: 600; }
+
+            .section { box-shadow: none; border: 0.5px solid #ddd; break-inside: avoid; padding: 0.35rem 0.5rem; margin-bottom: 0.3rem; border-radius: 3px; }
+            .section h2 { font-size: 0.8rem; margin-bottom: 0.2rem; padding-bottom: 0.15rem; color: #1e293b !important; }
+            .section h3 { font-size: 0.72rem; margin-bottom: 0.1rem; }
+            .section p { font-size: 0.68rem; }
+
+            /* Show print-only elements */
             .print-only { display: block; }
-            .skills-grid { grid-template-columns: 1fr 1fr 1fr; gap: 0.2rem 0.5rem; }
-            .skill-group h3 { font-size: 0.68rem; margin-bottom: 0.1rem; }
-            .skill-group .tag { font-size: 0.6rem; padding: 0.08rem 0.3rem; }
+
+            /* Achievements */
+            .achievements-list { gap: 0; }
+            .achievements-list li { font-size: 0.66rem; padding: 0.1rem 0; }
+            .achievements-list li i { font-size: 0.55rem; margin-top: 0.12rem; }
+
+            /* Experience highlight */
+            .exp-highlight { padding: 0.3rem 0.5rem; margin-bottom: 0.25rem; border: 0.5px solid #ddd; background: #fdfdfd; }
+            .exp-highlight-header h3 { font-size: 0.72rem; }
+            .exp-highlight-header .date { font-size: 0.62rem; }
+            .exp-intro { font-size: 0.66rem; margin-bottom: 0.2rem; }
+            .exp-achievements { font-size: 0.64rem; padding-left: 0.8rem; gap: 0.05rem; }
+            .exp-achievements li { margin-bottom: 0.05rem; }
+
+            .exp-other { grid-template-columns: 1fr 1fr; gap: 0.25rem; }
+            .exp-item h3 { font-size: 0.68rem; }
+            .exp-item .date { font-size: 0.6rem; margin-bottom: 0.12rem; }
+            .exp-item ul { font-size: 0.6rem; padding-left: 0.7rem; }
+            .exp-item ul li { margin-bottom: 0.08rem; }
+
+            /* Strengths */
+            .strengths-grid { grid-template-columns: 1fr 1fr; gap: 0.1rem 0.5rem; }
+            .strength-item { font-size: 0.66rem; padding: 0.12rem 0; }
+            .strength-item i { font-size: 0.55rem; }
+
+            /* Skills */
+            .skills-five { grid-template-columns: repeat(5, 1fr); gap: 0.15rem 0.4rem; }
+            .skills-five .skill-group h3 { font-size: 0.64rem; margin-bottom: 0.08rem; }
+            .skills-five .skill-group .tag { font-size: 0.56rem; padding: 0.06rem 0.25rem; }
+
             .bottom-cols { display: grid !important; grid-template-columns: 1fr 1fr; gap: 0.25rem; }
 
             .btn-submit, .btn-pdf, .sidebar-langs, .contact-form, footer { display: none; }
@@ -558,9 +668,20 @@
             margin-left: 0;
             margin-right: var(--sidebar-w);
         }
+        [dir="rtl"] .hero {
+            text-align: right;
+        }
         [dir="rtl"] .contact-form .honey {
             left: auto;
             right: -9999px;
+        }
+        [dir="rtl"] .exp-achievements {
+            padding-left: 0;
+            padding-right: 1.2rem;
+        }
+        [dir="rtl"] .exp-item ul {
+            padding-left: 0;
+            padding-right: 1.1rem;
         }
 
         @media (max-width: 768px) {
@@ -628,10 +749,20 @@
 
             [dir="rtl"] .main { margin-right: 0; }
 
-            .hero h2 { font-size: 1.1rem; }
+            .hero h2 { font-size: 1.2rem; }
             .hero .sub { font-size: 0.78rem; }
-            .exp-grid, .skills-grid, .impact-list, .bottom-cols {
+
+            .exp-highlight-header {
+                flex-direction: column;
+                gap: 0.2rem;
+            }
+
+            .exp-other, .skills-five, .strengths-grid, .bottom-cols {
                 grid-template-columns: 1fr;
+            }
+
+            .skills-five {
+                grid-template-columns: 1fr 1fr;
             }
         }
     </style>
@@ -644,16 +775,16 @@
             <img src="{{ site.baseurl }}/assets/logo.svg" alt="GC" width="36" height="36">
             <div>
                 <div class="name">Gabriel Cohen</div>
-                <div class="role">Tech Lead &amp; Architect</div>
+                <div class="role">Senior Platform Engineer</div>
             </div>
         </a>
 
         <nav class="sidebar-nav">
             <a href="#summary"><i class="fa-solid fa-user"></i> {{ site.data.i18n[lang_code].nav_summary | default: 'Summary' }}</a>
-            <a href="#impact"><i class="fa-solid fa-chart-line"></i> {{ site.data.i18n[lang_code].nav_impact | default: 'Impact' }}</a>
+            <a href="#achievements"><i class="fa-solid fa-chart-line"></i> {{ site.data.i18n[lang_code].nav_achievements | default: 'Achievements' }}</a>
             <a href="#experience"><i class="fa-solid fa-building"></i> {{ site.data.i18n[lang_code].nav_exp | default: 'Experience' }}</a>
+            <a href="#strengths"><i class="fa-solid fa-star"></i> {{ site.data.i18n[lang_code].nav_strengths | default: 'Strengths' }}</a>
             <a href="#skills"><i class="fa-solid fa-gears"></i> {{ site.data.i18n[lang_code].nav_skills | default: 'Skills' }}</a>
-            <a href="#ai"><i class="fa-solid fa-robot"></i> {{ site.data.i18n[lang_code].nav_ai | default: 'AI & Automation' }}</a>
             <a href="#education"><i class="fa-solid fa-graduation-cap"></i> {{ site.data.i18n[lang_code].nav_edu | default: 'Education' }}</a>
             <a href="#languages"><i class="fa-solid fa-language"></i> {{ site.data.i18n[lang_code].nav_lang | default: 'Languages' }}</a>
             <a href="#contact"><i class="fa-solid fa-envelope"></i> {{ site.data.i18n[lang_code].nav_contact | default: 'Contact' }}</a>

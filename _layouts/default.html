@@ -639,10 +639,12 @@
             .strength-item { font-size: 0.76rem; padding: 0.15rem 0; }
             .strength-item i { font-size: 0.62rem; }
 
-            /* Skills */
-            .skills-grid { grid-template-columns: 1fr 1fr 1fr; gap: 0.2rem 0.5rem; }
-            .skills-grid .skill-group h3 { font-size: 0.74rem; margin-bottom: 0.1rem; }
-            .skills-grid .skill-group .tag { font-size: 0.64rem; padding: 0.08rem 0.3rem; }
+            /* Skills — prominent for keyword scanning */
+            #skills { border-left: 3px solid #4a3020; padding-left: 0.7rem; background: #fdfdfb; }
+            #skills h2 { font-size: 1rem; font-weight: 800; }
+            .skills-grid { grid-template-columns: 1fr 1fr 1fr; gap: 0.3rem 0.6rem; }
+            .skills-grid .skill-group h3 { font-size: 0.78rem; margin-bottom: 0.12rem; font-weight: 700; }
+            .skills-grid .skill-group .tag { font-size: 0.72rem; padding: 0.1rem 0.4rem; font-weight: 600; background: #efe8da; border: 0.5px solid #d5cbb5; }
 
             .bottom-cols { display: grid !important; grid-template-columns: 1fr 1fr; gap: 0.3rem; }
 
@@ -653,6 +655,7 @@
             [dir="rtl"] .main { margin-right: 0; }
             [dir="rtl"] .exp-achievements { padding-left: 0; padding-right: 1rem; }
             [dir="rtl"] .exp-item ul { padding-left: 0; padding-right: 0.8rem; }
+            [dir="rtl"] #skills { border-left: none; border-right: 3px solid #4a3020; padding-left: 0.55rem; padding-right: 0.7rem; }
         }
 
         /* RTL */

@@ -8,7 +8,6 @@ description: "Gabriel Cohen — 20+ ans d'expertise en Linux, automatisation, in
 <section class="hero section">
     <h2>Gabriel Cohen</h2>
     <p class="sub">Senior Platform Engineer &mdash; Linux &bull; Automatisation &bull; Infrastructure &bull; DevOps</p>
-    <p class="tagline">Construire des plateformes fiables par l'automatisation, la standardisation et une expertise technique approfondie.</p>
     <p class="email print-only">cohen.gabriel@gmail.com</p>
     <p class="phone print-only">053.708.68.19</p>
 </section>

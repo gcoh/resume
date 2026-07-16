@@ -8,7 +8,6 @@ description: "Gabriel Cohen — Senior Platform Engineer with 20+ years in Linux
 <section class="hero section">
     <h2>Gabriel Cohen</h2>
     <p class="sub">Senior Platform Engineer &mdash; Linux &bull; Automation &bull; Infrastructure &bull; DevOps</p>
-    <p class="tagline">Building reliable platforms through automation, standardization and deep technical expertise.</p>
     <p class="email print-only">cohen.gabriel@gmail.com</p>
     <p class="phone print-only">053.708.68.19</p>
 </section>

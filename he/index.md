@@ -8,7 +8,6 @@ description: "גבריאל כהן — 20+ שנות ניסיון בלינוקס, 
 <section class="hero section">
     <h2>גבריאל כהן</h2>
     <p class="sub">Senior Platform Engineer &mdash; Linux &bull; אוטומציה &bull; תשתיות &bull; DevOps</p>
-    <p class="tagline">בונה פלטפורמות אמינות באמצעות אוטומציה, סטנדרטיזציה ומומחיות טכנית מעמיקה.</p>
     <p class="email print-only">cohen.gabriel@gmail.com</p>
     <p class="phone print-only">053.708.68.19</p>
 </section>

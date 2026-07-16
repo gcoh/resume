@@ -55,7 +55,7 @@ description: "Gabriel Cohen — 20+ ans d'expertise en Linux, automatisation, in
 
     <div class="exp-highlight">
         <div class="exp-highlight-header">
-            <h3>Responsable IT</h3>
+            <h3>Responsable Infrastructure &amp; Opérations</h3>
             <span class="date">Bank Postale — 2007–2017</span>
         </div>
         <p class="exp-intro">Responsable de l'ensemble du système d'information : infrastructure, réseau, sécurité et continuité d'activité.</p>

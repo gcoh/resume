@@ -55,7 +55,7 @@ description: "Gabriel Cohen — Senior Platform Engineer with 20+ years in Linux
 
     <div class="exp-highlight">
         <div class="exp-highlight-header">
-            <h3>Head of IT</h3>
+            <h3>Infrastructure &amp; Operations Manager</h3>
             <span class="date">Bank Postale — 2007–2017</span>
         </div>
         <p class="exp-intro">Full responsibility for the information system: infrastructure, network, security and business continuity.</p>

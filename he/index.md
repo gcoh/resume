@@ -22,13 +22,13 @@ description: "גבריאל כהן — 20+ שנות ניסיון בלינוקס, 
 <section class="section" id="achievements">
     <h2><i class="fa-solid fa-chart-line"></i> הישגים מרכזיים</h2>
     <div class="achievements-grid">
-        <div class="achievement-item"><i class="fa-solid fa-check"></i> הובלת מיגרציה של קרוב ל-80 שרתי לינוקס בייצור ללא הפרעה לעסק.</div>
-        <div class="achievement-item"><i class="fa-solid fa-check"></i> אוטומציה של מאות הפצות אפליקציות, הפחתת מאמץ ידני בכ-80%.</div>
-        <div class="achievement-item"><i class="fa-solid fa-check"></i> סטנדרטיזציה של נהלי התקנה ושדרוג במגוון סביבות ייצור.</div>
-        <div class="achievement-item"><i class="fa-solid fa-check"></i> אספקה מוצלחת של כ-50 שדרוגי אפליקציות גדולים כולל פלטפורמות בנקאיות קריטיות.</div>
-        <div class="achievement-item"><i class="fa-solid fa-check"></i> פיתוח כלי אוטומציה פנימיים שהחליפו משימות תפעוליות חוזרות.</div>
-        <div class="achievement-item"><i class="fa-solid fa-check"></i> תכנון פתרונות ניטור והתראות ששיפרו נראות בייצור וקיצרו זמני טיפול בתקלות.</div>
-        <div class="achievement-item"><i class="fa-solid fa-check"></i> אמון חוזר מצד הארגון לטיפול בתקלות ייצור המורכבות ביותר.</div>
+        <div class="achievement-item"><i class="fa-solid fa-check"></i> הובלתי מיגרציה של כ-80 שרתי Linux ל-Production ללא Downtime.</div>
+        <div class="achievement-item"><i class="fa-solid fa-check"></i> אוטומציה של מאות תהליכי Deployment עם חיסכון של כ-80% בזמן העבודה הידנית.</div>
+        <div class="achievement-item"><i class="fa-solid fa-check"></i> סטנדרטיזציה של תהליכי התקנה ושדרוג בסביבות Production.</div>
+        <div class="achievement-item"><i class="fa-solid fa-check"></i> הובלתי כ-50 שדרוגים מורכבים של מערכות קריטיות בסביבה בנקאית.</div>
+        <div class="achievement-item"><i class="fa-solid fa-check"></i> פיתחתי כלי Automation פנימיים שחסכו שעות עבודה רבות לצוותי התפעול.</div>
+        <div class="achievement-item"><i class="fa-solid fa-check"></i> הקמתי פתרונות Monitoring ו-Alerting ששיפרו משמעותית את זמני הזיהוי והטיפול בתקלות.</div>
+        <div class="achievement-item"><i class="fa-solid fa-check"></i> שימשתי ככתובת המרכזית לטיפול בתקלות Production מורכבות.</div>
     </div>
 </section>
 

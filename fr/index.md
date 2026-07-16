@@ -21,15 +21,15 @@ description: "Gabriel Cohen — 20+ ans d'expertise en Linux, automatisation, in
 
 <section class="section" id="achievements">
     <h2><i class="fa-solid fa-chart-line"></i> Réalisations Clés</h2>
-    <ul class="impact-list achievements-list">
-        <li><i class="fa-solid fa-check"></i> Pilotage de la migration de près de 80 serveurs Linux de production sans interruption de service.</li>
-        <li><i class="fa-solid fa-check"></i> Automatisation de centaines de déploiements d'applications, réduisant l'effort manuel d'environ 80%.</li>
-        <li><i class="fa-solid fa-check"></i> Standardisation des procédures d'installation et de mise à jour sur plusieurs environnements de production.</li>
-        <li><i class="fa-solid fa-check"></i> Livraison réussie d'environ 50 mises à jour majeures d'applications, incluant des plateformes bancaires critiques.</li>
-        <li><i class="fa-solid fa-check"></i> Conception de solutions de supervision et d'alertes améliorant la visibilité en production et réduisant le temps de résolution des incidents.</li>
-        <li><i class="fa-solid fa-check"></i> Développement d'outils d'automatisation internes éliminant les tâches opérationnelles répétitives.</li>
-        <li><i class="fa-solid fa-check"></i> Régulièrement sollicité pour diagnostiquer et résoudre les incidents de production les plus complexes.</li>
-    </ul>
+    <div class="achievements-grid">
+        <div class="achievement-item"><i class="fa-solid fa-check"></i> Pilotage de la migration de près de 80 serveurs Linux de production sans interruption de service.</div>
+        <div class="achievement-item"><i class="fa-solid fa-check"></i> Automatisation de centaines de déploiements d'applications, réduisant l'effort manuel d'environ 80%.</div>
+        <div class="achievement-item"><i class="fa-solid fa-check"></i> Standardisation des procédures d'installation et de mise à jour sur plusieurs environnements de production.</div>
+        <div class="achievement-item"><i class="fa-solid fa-check"></i> Livraison réussie d'environ 50 mises à jour majeures d'applications, incluant des plateformes bancaires critiques.</div>
+        <div class="achievement-item"><i class="fa-solid fa-check"></i> Conception de solutions de supervision et d'alertes améliorant la visibilité en production et réduisant le temps de résolution des incidents.</div>
+        <div class="achievement-item"><i class="fa-solid fa-check"></i> Développement d'outils d'automatisation internes éliminant les tâches opérationnelles répétitives.</div>
+        <div class="achievement-item"><i class="fa-solid fa-check"></i> Régulièrement sollicité pour diagnostiquer et résoudre les incidents de production les plus complexes.</div>
+    </div>
 </section>
 
 <section class="section" id="experience">
@@ -53,16 +53,24 @@ description: "Gabriel Cohen — 20+ ans d'expertise en Linux, automatisation, in
         </ul>
     </div>
 
-    <div class="exp-other">
-        <div class="exp-item">
-            <h3>Chef de Projet &amp; Administrateur Système</h3>
-            <div class="date">Bank Postale — 2007–2017</div>
-            <ul>
-                <li>Pilotage de projets d'infrastructure sur environnements Windows, Linux et VMware.</li>
-                <li>Conception de flux SQL pour le reporting et l'intégration de systèmes.</li>
-                <li>Garantie de la fiabilité, de la sécurité et des performances des systèmes.</li>
-            </ul>
+    <div class="exp-highlight">
+        <div class="exp-highlight-header">
+            <h3>Directeur des Systèmes d'Information (DSI)</h3>
+            <span class="date">Bank Postale — 2007–2017</span>
         </div>
+        <p class="exp-intro">Responsable de l'ensemble du système d'information : infrastructure, réseau, sécurité et continuité d'activité.</p>
+        <ul class="exp-achievements">
+            <li>Gestion d'un réseau multi-site de 120 utilisateurs et 20 serveurs (Windows, Linux, VMware).</li>
+            <li>Mise en place d'une infrastructure redondante (haute disponibilité) et d'un plan de reprise d'activité (PRA/DRP).</li>
+            <li>Pilotage de projets d'infrastructure : virtualisation, migrations et sécurité périmétrique.</li>
+            <li>Conception de flux SQL pour le reporting, l'intégration et le décisionnel.</li>
+            <li>Administration et sécurisation des systèmes : pare-feu, sauvegardes, politiques d'accès.</li>
+            <li>Gestion des fournisseurs, négociation des contrats et gestion du budget IT.</li>
+            <li>Supervision et monitoring des infrastructures critiques (production, réseau, stockage).</li>
+        </ul>
+    </div>
+
+    <div class="exp-other">
         <div class="exp-item">
             <h3>Chef de Projet &amp; Ingénieur Logiciel</h3>
             <div class="date">ODDO — 1996–2006</div>
@@ -71,22 +79,6 @@ description: "Gabriel Cohen — 20+ ans d'expertise en Linux, automatisation, in
                 <li>Conception d'architectures de données et d'applications métier internes.</li>
             </ul>
         </div>
-    </div>
-</section>
-
-<section class="section" id="strengths">
-    <h2><i class="fa-solid fa-star"></i> Forces</h2>
-    <div class="strengths-grid">
-        <span class="strength-item"><i class="fa-solid fa-check"></i> Platform Engineering</span>
-        <span class="strength-item"><i class="fa-solid fa-check"></i> Modernisation d'Infrastructure</span>
-        <span class="strength-item"><i class="fa-solid fa-check"></i> Expertise Linux</span>
-        <span class="strength-item"><i class="fa-solid fa-check"></i> Automatisation &amp; Standardisation</span>
-        <span class="strength-item"><i class="fa-solid fa-check"></i> Diagnostic en Production</span>
-        <span class="strength-item"><i class="fa-solid fa-check"></i> Pipelines CI/CD</span>
-        <span class="strength-item"><i class="fa-solid fa-check"></i> Optimisation des Performances</span>
-        <span class="strength-item"><i class="fa-solid fa-check"></i> Résolution de Problèmes Complexes</span>
-        <span class="strength-item"><i class="fa-solid fa-check"></i> Analyse des Causes Racines</span>
-        <span class="strength-item"><i class="fa-solid fa-check"></i> Collaboration Transverse</span>
     </div>
 </section>
 

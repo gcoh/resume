@@ -21,15 +21,15 @@ description: "Gabriel Cohen — Senior Platform Engineer with 20+ years in Linux
 
 <section class="section" id="achievements">
     <h2><i class="fa-solid fa-chart-line"></i> Key Achievements</h2>
-    <ul class="impact-list achievements-list">
-        <li><i class="fa-solid fa-check"></i> Led the migration of nearly 80 production Linux servers with zero business disruption.</li>
-        <li><i class="fa-solid fa-check"></i> Automated hundreds of application deployments, reducing manual effort by approximately 80%.</li>
-        <li><i class="fa-solid fa-check"></i> Standardized installation and upgrade procedures across multiple production environments.</li>
-        <li><i class="fa-solid fa-check"></i> Successfully delivered around 50 major application upgrades including critical banking platforms.</li>
-        <li><i class="fa-solid fa-check"></i> Designed monitoring and alerting solutions improving production visibility and reducing incident resolution time.</li>
-        <li><i class="fa-solid fa-check"></i> Developed internal automation tools eliminating repetitive operational tasks.</li>
-        <li><i class="fa-solid fa-check"></i> Frequently trusted to diagnose and resolve the most complex production incidents.</li>
-    </ul>
+    <div class="achievements-grid">
+        <div class="achievement-item"><i class="fa-solid fa-check"></i> Led the migration of nearly 80 production Linux servers with zero business disruption.</div>
+        <div class="achievement-item"><i class="fa-solid fa-check"></i> Automated hundreds of application deployments, reducing manual effort by approximately 80%.</div>
+        <div class="achievement-item"><i class="fa-solid fa-check"></i> Standardized installation and upgrade procedures across multiple production environments.</div>
+        <div class="achievement-item"><i class="fa-solid fa-check"></i> Successfully delivered around 50 major application upgrades including critical banking platforms.</div>
+        <div class="achievement-item"><i class="fa-solid fa-check"></i> Designed monitoring and alerting solutions improving production visibility and reducing incident resolution time.</div>
+        <div class="achievement-item"><i class="fa-solid fa-check"></i> Developed internal automation tools eliminating repetitive operational tasks.</div>
+        <div class="achievement-item"><i class="fa-solid fa-check"></i> Frequently trusted to diagnose and resolve the most complex production incidents.</div>
+    </div>
 </section>
 
 <section class="section" id="experience">
@@ -53,16 +53,24 @@ description: "Gabriel Cohen — Senior Platform Engineer with 20+ years in Linux
         </ul>
     </div>
 
-    <div class="exp-other">
-        <div class="exp-item">
-            <h3>Project Manager &amp; System Administrator</h3>
-            <div class="date">Bank Postale — 2007–2017</div>
-            <ul>
-                <li>Led infrastructure projects across Windows, Linux and VMware environments.</li>
-                <li>Designed SQL workflows for reporting and system integration.</li>
-                <li>Ensured system reliability, security and performance across all platforms.</li>
-            </ul>
+    <div class="exp-highlight">
+        <div class="exp-highlight-header">
+            <h3>IT Director (DSI)</h3>
+            <span class="date">Bank Postale — 2007–2017</span>
         </div>
+        <p class="exp-intro">Full responsibility for the information system: infrastructure, network, security and business continuity.</p>
+        <ul class="exp-achievements">
+            <li>Managed a multi-site network of 120 users and 20 servers (Windows, Linux, VMware).</li>
+            <li>Implemented redundant infrastructure (high availability) and a disaster recovery plan (DRP).</li>
+            <li>Led infrastructure projects: virtualization, data centre migrations and perimeter security.</li>
+            <li>Designed SQL workflows for reporting, integration and business intelligence.</li>
+            <li>Administered and secured systems: firewalls, backups, access policies.</li>
+            <li>Managed vendors, contract negotiations and IT budget (€500k+).</li>
+            <li>Supervised and monitored critical infrastructure (production, network, storage).</li>
+        </ul>
+    </div>
+
+    <div class="exp-other">
         <div class="exp-item">
             <h3>Project Manager &amp; Software Engineer</h3>
             <div class="date">ODDO — 1996–2006</div>
@@ -71,22 +79,6 @@ description: "Gabriel Cohen — Senior Platform Engineer with 20+ years in Linux
                 <li>Designed data architectures and internal business applications.</li>
             </ul>
         </div>
-    </div>
-</section>
-
-<section class="section" id="strengths">
-    <h2><i class="fa-solid fa-star"></i> Core Strengths</h2>
-    <div class="strengths-grid">
-        <span class="strength-item"><i class="fa-solid fa-check"></i> Platform Engineering</span>
-        <span class="strength-item"><i class="fa-solid fa-check"></i> Infrastructure Modernization</span>
-        <span class="strength-item"><i class="fa-solid fa-check"></i> Linux Expertise</span>
-        <span class="strength-item"><i class="fa-solid fa-check"></i> Automation &amp; Standardization</span>
-        <span class="strength-item"><i class="fa-solid fa-check"></i> Production Troubleshooting</span>
-        <span class="strength-item"><i class="fa-solid fa-check"></i> CI/CD Pipelines</span>
-        <span class="strength-item"><i class="fa-solid fa-check"></i> Performance Optimization</span>
-        <span class="strength-item"><i class="fa-solid fa-check"></i> Complex Problem Solving</span>
-        <span class="strength-item"><i class="fa-solid fa-check"></i> Root Cause Analysis</span>
-        <span class="strength-item"><i class="fa-solid fa-check"></i> Cross-team Collaboration</span>
     </div>
 </section>
 

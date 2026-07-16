@@ -21,15 +21,15 @@ description: "גבריאל כהן — 20+ שנות ניסיון בלינוקס, 
 
 <section class="section" id="achievements">
     <h2><i class="fa-solid fa-chart-line"></i> הישגים מרכזיים</h2>
-    <ul class="impact-list achievements-list">
-        <li><i class="fa-solid fa-check"></i> הובלת מיגרציה של קרוב ל-80 שרתי לינוקס בייצור ללא הפרעה לעסק.</li>
-        <li><i class="fa-solid fa-check"></i> אוטומציה של מאות הפצות אפליקציות, הפחתת מאמץ ידני בכ-80%.</li>
-        <li><i class="fa-solid fa-check"></i> סטנדרטיזציה של נהלי התקנה ושדרוג במגוון סביבות ייצור.</li>
-        <li><i class="fa-solid fa-check"></i> אספקה מוצלחת של כ-50 שדרוגי אפליקציות גדולים כולל פלטפורמות בנקאיות קריטיות.</li>
-        <li><i class="fa-solid fa-check"></i> פיתוח כלי אוטומציה פנימיים שהחליפו משימות תפעוליות חוזרות.</li>
-        <li><i class="fa-solid fa-check"></i> תכנון פתרונות ניטור והתראות ששיפרו נראות בייצור וקיצרו זמני טיפול בתקלות.</li>
-        <li><i class="fa-solid fa-check"></i> אמון חוזר מצד הארגון לטיפול בתקלות ייצור המורכבות ביותר.</li>
-    </ul>
+    <div class="achievements-grid">
+        <div class="achievement-item"><i class="fa-solid fa-check"></i> הובלת מיגרציה של קרוב ל-80 שרתי לינוקס בייצור ללא הפרעה לעסק.</div>
+        <div class="achievement-item"><i class="fa-solid fa-check"></i> אוטומציה של מאות הפצות אפליקציות, הפחתת מאמץ ידני בכ-80%.</div>
+        <div class="achievement-item"><i class="fa-solid fa-check"></i> סטנדרטיזציה של נהלי התקנה ושדרוג במגוון סביבות ייצור.</div>
+        <div class="achievement-item"><i class="fa-solid fa-check"></i> אספקה מוצלחת של כ-50 שדרוגי אפליקציות גדולים כולל פלטפורמות בנקאיות קריטיות.</div>
+        <div class="achievement-item"><i class="fa-solid fa-check"></i> פיתוח כלי אוטומציה פנימיים שהחליפו משימות תפעוליות חוזרות.</div>
+        <div class="achievement-item"><i class="fa-solid fa-check"></i> תכנון פתרונות ניטור והתראות ששיפרו נראות בייצור וקיצרו זמני טיפול בתקלות.</div>
+        <div class="achievement-item"><i class="fa-solid fa-check"></i> אמון חוזר מצד הארגון לטיפול בתקלות ייצור המורכבות ביותר.</div>
+    </div>
 </section>
 
 <section class="section" id="experience">
@@ -53,16 +53,24 @@ description: "גבריאל כהן — 20+ שנות ניסיון בלינוקס, 
         </ul>
     </div>
 
-    <div class="exp-other">
-        <div class="exp-item">
-            <h3>מנהל פרויקטים &amp; מנהל מערכת</h3>
-            <div class="date">Bank Postale — 2007–2017</div>
-            <ul>
-                <li>ניהול פרויקטי תשתית בסביבות Windows, Linux ו-VMware.</li>
-                <li>תכנון תהליכי SQL לדיווח ואינטגרציה.</li>
-                <li>שמירה על אמינות, אבטחה וביצועי מערכות.</li>
-            </ul>
+    <div class="exp-highlight">
+        <div class="exp-highlight-header">
+            <h3>מנהל מערכות מידע (DSI)</h3>
+            <span class="date">Bank Postale — 2007–2017</span>
         </div>
+        <p class="exp-intro">אחריות מלאה על מערך מערכות המידע: תשתיות, רשת, אבטחה והמשכיות עסקית.</p>
+        <ul class="exp-achievements">
+            <li>ניהול רשת רב-אתרית של 120 משתמשים ו-20 שרתים (Windows, Linux, VMware).</li>
+            <li>הקמת תשתית מיותרת (זמינות גבוהה) ותוכנית התאוששות מאסון (DRP).</li>
+            <li>הובלת פרויקטי תשתית: וירטואליזציה, מיגרציות ואבטחה היקפית.</li>
+            <li>תכנון תהליכי SQL לדיווח, אינטגרציה ובינה עסקית.</li>
+            <li>ניהול ואבטחת מערכות: חומות אש, גיבויים, מדיניות גישה.</li>
+            <li>ניהול ספקים, משא ומתן על חוזים וניהול תקציב IT.</li>
+            <li>פיקוח וניטור תשתיות קריטיות (ייצור, רשת, אחסון).</li>
+        </ul>
+    </div>
+
+    <div class="exp-other">
         <div class="exp-item">
             <h3>מנהל פרויקטים &amp; מהנדס תוכנה</h3>
             <div class="date">ODDO — 1996–2006</div>
@@ -71,22 +79,6 @@ description: "גבריאל כהן — 20+ שנות ניסיון בלינוקס, 
                 <li>תכנון ארכיטקטורות נתונים ויישומים עסקיים פנימיים.</li>
             </ul>
         </div>
-    </div>
-</section>
-
-<section class="section" id="strengths">
-    <h2><i class="fa-solid fa-star"></i> חוזקות ליבה</h2>
-    <div class="strengths-grid">
-        <span class="strength-item"><i class="fa-solid fa-check"></i> Platform Engineering</span>
-        <span class="strength-item"><i class="fa-solid fa-check"></i> מודרניזציית תשתיות</span>
-        <span class="strength-item"><i class="fa-solid fa-check"></i> מומחיות לינוקס</span>
-        <span class="strength-item"><i class="fa-solid fa-check"></i> אוטומציה וסטנדרטיזציה</span>
-        <span class="strength-item"><i class="fa-solid fa-check"></i> פתרון תקלות בייצור</span>
-        <span class="strength-item"><i class="fa-solid fa-check"></i> פיפליין CI/CD</span>
-        <span class="strength-item"><i class="fa-solid fa-check"></i> אופטימיזציית ביצועים</span>
-        <span class="strength-item"><i class="fa-solid fa-check"></i> פתרון בעיות מורכבות</span>
-        <span class="strength-item"><i class="fa-solid fa-check"></i> ניתוח שורש בעיה</span>
-        <span class="strength-item"><i class="fa-solid fa-check"></i> שיתוף פעולה צוותי</span>
     </div>
 </section>
 

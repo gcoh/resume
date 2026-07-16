@@ -303,15 +303,14 @@
         }
 
         /* Achievements list */
-        .achievements-list {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            gap: 0.25rem;
+        /* Achievements — 2-column grid */
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.3rem 1.5rem;
         }
 
-        .achievements-list li {
+        .achievement-item {
             padding: 0.3rem 0;
             font-size: 0.82rem;
             display: flex;
@@ -319,7 +318,7 @@
             gap: 0.45rem;
         }
 
-        .achievements-list li i {
+        .achievement-item i {
             color: #2d6a4f;
             margin-top: 0.18rem;
             flex-shrink: 0;
@@ -374,10 +373,10 @@
             margin-bottom: 0.1rem;
         }
 
-        /* Other experience — side by side */
+        /* Other experience */
         .exp-other {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
             gap: 0.75rem;
         }
 
@@ -403,33 +402,11 @@
             margin-bottom: 0.15rem;
         }
 
-        /* Strengths grid */
-        .strengths-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 0.35rem 1rem;
-        }
-
-        .strength-item {
-            display: flex;
-            align-items: center;
-            gap: 0.45rem;
-            padding: 0.35rem 0;
-            font-size: 0.82rem;
-            font-weight: 500;
-        }
-
-        .strength-item i {
-            color: #2d6a4f;
-            font-size: 0.7rem;
-            flex-shrink: 0;
-        }
-
-        /* Skills — 3-column grid */
+        /* Skills — 2-column grid, airy */
         .skills-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 0.5rem 1rem;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.7rem 2rem;
         }
 
         .skill-group h3 {
@@ -605,9 +582,8 @@
             #skills                   { order: 2; }
             #achievements             { order: 3; }
             #experience               { order: 4; }
-            #strengths                { order: 5; }
-            .bottom-cols:has(#education) { order: 6; }
-            .bottom-cols:has(#contact)   { order: 7; }
+            .bottom-cols:has(#education) { order: 5; }
+            .bottom-cols:has(#contact)   { order: 6; }
             .bottom-cols              { width: 100%; }
 
             /* Hero */
@@ -627,9 +603,9 @@
             .print-only { display: block; }
 
             /* Achievements */
-            .achievements-list { gap: 0.05rem; }
-            .achievements-list li { font-size: 0.76rem; padding: 0.12rem 0; }
-            .achievements-list li i { font-size: 0.62rem; margin-top: 0.15rem; }
+            .achievements-grid { gap: 0.1rem 0.8rem; }
+            .achievement-item { font-size: 0.76rem; padding: 0.12rem 0; }
+            .achievement-item i { font-size: 0.62rem; margin-top: 0.15rem; }
 
             /* Experience highlight */
             .exp-highlight { padding: 0.4rem 0.55rem; margin-bottom: 0.3rem; border: 0.5px solid #ddd; background: #fdfdfd; }
@@ -639,21 +615,16 @@
             .exp-achievements { font-size: 0.74rem; padding-left: 1rem; gap: 0.08rem; }
             .exp-achievements li { margin-bottom: 0.06rem; }
 
-            .exp-other { grid-template-columns: 1fr 1fr; gap: 0.3rem; }
+            .exp-other { grid-template-columns: 1fr; gap: 0.3rem; }
             .exp-item h3 { font-size: 0.78rem; }
             .exp-item .date { font-size: 0.68rem; margin-bottom: 0.15rem; }
             .exp-item ul { font-size: 0.7rem; padding-left: 0.8rem; }
             .exp-item ul li { margin-bottom: 0.1rem; }
 
-            /* Strengths */
-            .strengths-grid { grid-template-columns: 1fr 1fr; gap: 0.12rem 0.5rem; }
-            .strength-item { font-size: 0.76rem; padding: 0.15rem 0; }
-            .strength-item i { font-size: 0.62rem; }
-
             /* Skills — prominent for keyword scanning */
             #skills { border-left: 3px solid #4a3020; padding-left: 0.7rem; background: #fdfdfb; }
             #skills h2 { font-size: 1rem; font-weight: 800; }
-            .skills-grid { grid-template-columns: 1fr 1fr 1fr; gap: 0.3rem 0.6rem; }
+            .skills-grid { grid-template-columns: 1fr 1fr; gap: 0.4rem 1rem; }
             .skills-grid .skill-group h3 { font-size: 0.78rem; margin-bottom: 0.12rem; font-weight: 700; }
             .skills-grid .skill-group .tag { font-size: 0.72rem; padding: 0.1rem 0.4rem; font-weight: 600; background: #efe8da; border: 0.5px solid #d5cbb5; }
 
@@ -776,7 +747,7 @@
                 gap: 0.2rem;
             }
 
-            .exp-other, .strengths-grid, .bottom-cols {
+            .exp-other, .bottom-cols {
                 grid-template-columns: 1fr;
             }
 
@@ -802,7 +773,6 @@
             <a href="#summary"><i class="fa-solid fa-user"></i> {{ site.data.i18n[lang_code].nav_summary | default: 'Summary' }}</a>
             <a href="#achievements"><i class="fa-solid fa-chart-line"></i> {{ site.data.i18n[lang_code].nav_achievements | default: 'Achievements' }}</a>
             <a href="#experience"><i class="fa-solid fa-building"></i> {{ site.data.i18n[lang_code].nav_exp | default: 'Experience' }}</a>
-            <a href="#strengths"><i class="fa-solid fa-star"></i> {{ site.data.i18n[lang_code].nav_strengths | default: 'Strengths' }}</a>
             <a href="#skills"><i class="fa-solid fa-gears"></i> {{ site.data.i18n[lang_code].nav_skills | default: 'Skills' }}</a>
             <a href="#education"><i class="fa-solid fa-graduation-cap"></i> {{ site.data.i18n[lang_code].nav_edu | default: 'Education' }}</a>
             <a href="#languages"><i class="fa-solid fa-language"></i> {{ site.data.i18n[lang_code].nav_lang | default: 'Languages' }}</a>

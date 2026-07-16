@@ -55,7 +55,7 @@ description: "גבריאל כהן — 20+ שנות ניסיון בלינוקס, 
 
     <div class="exp-highlight">
         <div class="exp-highlight-header">
-            <h3>מנהל מערכות מידע (DSI)</h3>
+            <h3>מנהל IT</h3>
             <span class="date">Bank Postale — 2007–2017</span>
         </div>
         <p class="exp-intro">אחריות מלאה על מערך מערכות המידע: תשתיות, רשת, אבטחה והמשכיות עסקית.</p>

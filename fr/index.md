@@ -70,15 +70,32 @@ description: "Gabriel Cohen — 20+ ans d'expertise en Linux, automatisation, in
         </ul>
     </div>
 
-    <div class="exp-other">
-        <div class="exp-item">
+    <div class="exp-highlight">
+        <div class="exp-highlight-header">
             <h3>Chef de Projet &amp; Ingénieur Logiciel</h3>
-            <div class="date">ODDO — 1996–2006</div>
-            <ul>
-                <li>Développement de systèmes Back et Middle Office en C# et SQL Server.</li>
-                <li>Conception d'architectures de données et d'applications métier internes.</li>
-            </ul>
+            <span class="date">ODDO — 2000–2006</span>
         </div>
+        <p class="exp-intro">Conception et développement de systèmes financiers pour une société de gestion d'actifs.</p>
+        <ul class="exp-achievements">
+            <li>Développement de systèmes Back et Middle Office en C# et SQL Server.</li>
+            <li>Conception d'architectures de données et d'applications métier internes.</li>
+            <li>Gestion des flux financiers et rapprochements bancaires automatisés.</li>
+            <li>Maintenance évolutive et corrective du parc applicatif.</li>
+        </ul>
+    </div>
+
+    <div class="exp-highlight">
+        <div class="exp-highlight-header">
+            <h3>Développeur &amp; Administrateur IBM Lotus Domino</h3>
+            <span class="date">Keyrus — 1996–2000</span>
+        </div>
+        <p class="exp-intro">Développement d'applications collaboratives et administration de serveurs pour clients grands comptes.</p>
+        <ul class="exp-achievements">
+            <li>Développement d'applications collaboratives sous IBM Lotus Domino (LotusScript, Formula).</li>
+            <li>Administration de serveurs Domino : messagerie, bases documentaires, sécurité et réplication.</li>
+            <li>Conception et déploiement de solutions métier pour des clients grands comptes.</li>
+            <li>Gestion des migrations et mises à jour de versions Domino.</li>
+        </ul>
     </div>
 </section>
 

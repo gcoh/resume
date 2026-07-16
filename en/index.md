@@ -70,15 +70,32 @@ description: "Gabriel Cohen — Senior Platform Engineer with 20+ years in Linux
         </ul>
     </div>
 
-    <div class="exp-other">
-        <div class="exp-item">
+    <div class="exp-highlight">
+        <div class="exp-highlight-header">
             <h3>Project Manager &amp; Software Engineer</h3>
-            <div class="date">ODDO — 1996–2006</div>
-            <ul>
-                <li>Built Back and Middle Office systems in C# and SQL Server.</li>
-                <li>Designed data architectures and internal business applications.</li>
-            </ul>
+            <span class="date">ODDO — 2000–2006</span>
         </div>
+        <p class="exp-intro">Design and development of financial systems for an asset management firm.</p>
+        <ul class="exp-achievements">
+            <li>Built Back and Middle Office systems in C# and SQL Server.</li>
+            <li>Designed data architectures and internal business applications.</li>
+            <li>Managed automated financial workflows and bank reconciliations.</li>
+            <li>Maintained and enhanced the application portfolio.</li>
+        </ul>
+    </div>
+
+    <div class="exp-highlight">
+        <div class="exp-highlight-header">
+            <h3>Developer &amp; IBM Lotus Domino Administrator</h3>
+            <span class="date">Keyrus — 1996–2000</span>
+        </div>
+        <p class="exp-intro">Development of collaborative applications and server administration for enterprise clients.</p>
+        <ul class="exp-achievements">
+            <li>Developed collaborative applications on IBM Lotus Domino (LotusScript, Formula).</li>
+            <li>Administered Domino servers: messaging, document databases, security and replication.</li>
+            <li>Designed and deployed business solutions for enterprise clients.</li>
+            <li>Managed Domino version migrations and upgrades.</li>
+        </ul>
     </div>
 </section>
 

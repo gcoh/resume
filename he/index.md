@@ -70,15 +70,32 @@ description: "גבריאל כהן — 20+ שנות ניסיון בלינוקס, 
         </ul>
     </div>
 
-    <div class="exp-other">
-        <div class="exp-item">
+    <div class="exp-highlight">
+        <div class="exp-highlight-header">
             <h3>מנהל פרויקטים &amp; מהנדס תוכנה</h3>
-            <div class="date">ODDO — 1996–2006</div>
-            <ul>
-                <li>פיתוח מערכות Back ו-Middle Office ב-#C ו-SQL Server.</li>
-                <li>תכנון ארכיטקטורות נתונים ויישומים עסקיים פנימיים.</li>
-            </ul>
+            <span class="date">ODDO — 2000–2006</span>
         </div>
+        <p class="exp-intro">תכנון ופיתוח מערכות פיננסיות עבור חברת ניהול נכסים.</p>
+        <ul class="exp-achievements">
+            <li>פיתוח מערכות Back ו-Middle Office ב-#C ו-SQL Server.</li>
+            <li>תכנון ארכיטקטורות נתונים ויישומים עסקיים פנימיים.</li>
+            <li>ניהול תהליכי עבודה פיננסיים אוטומטיים והתאמות בנקאיות.</li>
+            <li>תחזוקה ושיפור מערכות קיימות.</li>
+        </ul>
+    </div>
+
+    <div class="exp-highlight">
+        <div class="exp-highlight-header">
+            <h3>מפתח &amp; מנהל IBM Lotus Domino</h3>
+            <span class="date">Keyrus — 1996–2000</span>
+        </div>
+        <p class="exp-intro">פיתוח יישומים שיתופיים וניהול שרתים עבור לקוחות ארגוניים.</p>
+        <ul class="exp-achievements">
+            <li>פיתוח יישומים שיתופיים על גבי IBM Lotus Domino (LotusScript, Formula).</li>
+            <li>ניהול שרתי Domino: מסרים, בסיסי נתונים, אבטחה ורפליקציה.</li>
+            <li>תכנון והטמעה של פתרונות עסקיים ללקוחות ארגוניים.</li>
+            <li>ניהול מיגרציות ושדרוגי גרסאות Domino.</li>
+        </ul>
     </div>
 </section>
 
